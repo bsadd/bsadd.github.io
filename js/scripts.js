@@ -11,9 +11,12 @@ $(document).ready(function(){
             e.preventDefault();
             var href = $(this).attr('href');
             var component = this;
-            ga('send', 'event', 'click', 'links', {
-                'href': href,
-                'hitCallback': function() {
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'click',
+                eventAction: 'links',
+                eventLabel: href,
+                hitCallback: function() {
                     $(component)[0].click();
                 }
             });
