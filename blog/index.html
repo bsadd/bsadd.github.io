@@ -174,7 +174,6 @@
                             <hr/>
                             <div>
                                 <div class="fb-like" data-href="." data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-                                <a href="." class="btn-fb-share hidden">Share</a>
                             </div>
                         </div>
                     </div>
@@ -229,8 +228,13 @@ $(function(){
     }else{
         loadAllPosts();
     }
+    $('.fb-comments').attr('data-href' , window.location.href );
+    $('.fb-like').attr('data-href' , window.location.href );
 
-    loadFacebookComponents(post);
+    //$('.show-fb-comment').click(function(){
+        loadFacebookCommentBox();
+        //return false;
+    //});
 });
 
 function loadAllPosts(){
@@ -277,26 +281,7 @@ function loadSinglePost(post){
     $('.post-author-position').text( post.authorPosition );
 }
 
-function loadFacebookComponents(post){
-
-    $('.fb-comments').attr('data-href' , window.location.href );
-    $('.fb-like').attr('data-href' , window.location.href );
-
-    if( $.urlParam('postadmin') ) {
-        var fbShareParams = "app_id=660627137442920"
-            + "&display=popup"
-            + "&caption=" + encodeURIComponent( "BSADD Blog - " + post.title )
-            + "&link=" + window.location.href
-            + "&description=" + encodeURIComponent("BUET System Analysis, Design and Development community")
-            + "&redirect_uri=" + window.location.href
-        ;
-        var fbShareUrl = "https://www.facebook.com/dialog/feed?" + fbShareParams;
-        console.log( fbShareUrl );
-
-        $('.btn-fb-share').attr('href', fbShareUrl );
-        $('.btn-fb-share').removeClass('hidden');
-    }
-
+function loadFacebookCommentBox(){
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '660627137442920',
