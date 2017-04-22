@@ -166,11 +166,16 @@
                         <ul id="nav-items" class="nav nav-stacked">
                             <li><h3 class="highlight"> <a href=".">BSADD Blog </a> <i class="glyphicon glyphicon-dashboard pull-right"></i></h3></li>
                         </ul>
-                        --
-                        <p>
-                            <a class="post-author" target="_blank" href="."></a><br/>
-                            <span class="post-author-position"></span>
-                        </p>
+                        <div class="author-content">
+                            <div>
+                                <a class="post-author" target="_blank" href="."></a><br/>
+                                <span class="post-author-position"></span>
+                            </div>
+                            <hr/>
+                            <div>
+                                <div class="fb-like" data-href="." data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-9 panel content-panel text-justify">
@@ -224,11 +229,12 @@ $(function(){
         loadAllPosts();
     }
     $('.fb-comments').attr('data-href' , window.location.href );
+    $('.fb-like').attr('data-href' , window.location.href );
 
-    $('.show-fb-comment').click(function(){
+    //$('.show-fb-comment').click(function(){
         loadFacebookCommentBox();
-        return false;
-    });
+        //return false;
+    //});
 });
 
 function loadAllPosts(){
