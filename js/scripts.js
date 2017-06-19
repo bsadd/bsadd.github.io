@@ -41,7 +41,20 @@ $(document).ready(function(){
         });
     });
 
+    $('.click-to-see-text').addClass('glyphicon glyphicon-eye-open');
+    $('.click-to-see-text').css('cursor' , 'pointer');
+    $('.click-to-see-text').click(function(){
+        var b64text = $(this).data('base64');
+        console.log(b64text);
+        var decoded = base64DecodingUTF8( b64text );
+        $(this).text( decoded );
+
+        $(this).removeClass('glyphicon glyphicon-eye-open');
+        $(this).css('cursor' , '');
+    });
+
 });
+
 
 function scrollToElement( $element , time = 500, success ){ 
     $('html, body').animate({
@@ -77,8 +90,8 @@ function base64EncodingUTF8(str) {
     return b64Encoded;
 }
 
-function base64DecodingUTF8(decoded) {
-    var b64Decoded = base64js.toByteArray(decoded);
-    var str = new TextEncoderLite('utf-8').decode(b64Decoded);
+function base64DecodingUTF8(encoded) {
+    var b64Encoded = base64js.toByteArray(encoded);
+    var str = new TextDecoder('utf-8').decode(b64Encoded);
     return str;
 }

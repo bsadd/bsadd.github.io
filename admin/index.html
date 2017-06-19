@@ -65,6 +65,7 @@
             </div>
             <p class="center">
                 <button id="btn-encode-base64" class="button">Encode Base64</button>
+                <button id="btn-decode-base64" class="button">Decode Base64</button>
             </p>
         </div>
     </div>
@@ -82,6 +83,10 @@
             $(document).ready(function(){
                 $('#btn-encode-base64').click(function(){
                     $('#result-textarea').val( base64EncodingUTF8( $('#from-textarea').val() ) ) ;
+                });
+
+                $('#btn-decode-base64').click(function(){
+                    $('#result-textarea').val( base64DecodingUTF8( $('#from-textarea').val() ) ) ;
                 });
             });
         </script>
