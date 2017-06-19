@@ -45,7 +45,6 @@ $(document).ready(function(){
     $('.click-to-see-text').css('cursor' , 'pointer');
     $('.click-to-see-text').click(function(){
         var b64text = $(this).data('base64');
-        console.log(b64text);
         var decoded = base64DecodingUTF8( b64text );
         $(this).text( decoded );
 
