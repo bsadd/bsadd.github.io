@@ -48,3 +48,14 @@ $.urlParam = function(name){
     }
 };
 
+function base64EncodingUTF8(str) {
+    var encoded = new TextEncoderLite('utf-8').encode(str);
+    var b64Encoded = base64js.fromByteArray(encoded);
+    return b64Encoded;
+}
+
+function base64DecodingUTF8(decoded) {
+    var b64Decoded = base64js.toByteArray(decoded);
+    var str = new TextEncoderLite('utf-8').decode(b64Decoded);
+    return str;
+}
