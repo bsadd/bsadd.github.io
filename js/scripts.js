@@ -6,22 +6,33 @@ $(document).ready(function(){
     });
 
     $('a').click(function(e){
-        if( ! $(this).data('autoclick') ){
-            $(this).data('autoclick' , true);
-            e.preventDefault();
-            var href = $(this).attr('href');
-            var component = this;
+        var href = $(this).attr('href');
+        if(!href || href == '' || href == "#" ) {
+            //do nothing
+        }else if( href.startsWith('#') ) { //enqueu analytics command
             ga('send', {
                 hitType: 'event',
                 eventCategory: 'click',
-                eventAction: 'links',
+                eventAction: 'ilinks',
+                eventLabel: 'workplacereport'+href,
+            });
+        }else if( ! $(this).data('autoclick') ){ //external/internal link, block page navigation unless ga is tracked
+            var component = this;
+            $(this).data('autoclick' , true);
+            e.preventDefault();
+            ga('send', {
+                hitType: 'event',
+                eventCategory: 'click',
+                eventAction: ( isExternalLink(href) ? 'elinks' : 'ilinks' ),
                 eventLabel: href,
                 hitCallback: function() {
                     $(component)[0].click();
                 }
             });
         }
+
     });
+
 
     $('.photo-album').each(function(){
         $(this).lightGallery({
@@ -38,6 +49,18 @@ function scrollToElement( $element , time = 500, success ){
     }, time , success ); 
 }
 
+function scrollToSelector( selector, time = 500, success ){
+    $('html, body').animate({
+        scrollTop: $(selector).offset().top
+    }, time , success );
+}
+
+function isExternalLink(link){
+    return link.startsWith('http://')
+        || link.startsWith('https://')
+        || link.startsWith('www.')
+    ;
+}
 
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
