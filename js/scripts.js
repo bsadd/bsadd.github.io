@@ -41,18 +41,25 @@ $(document).ready(function(){
         });
     });
 
-    $('.click-to-see-text').addClass('glyphicon glyphicon-eye-open');
-    $('.click-to-see-text').css('cursor' , 'pointer');
-    $('.click-to-see-text').click(function(){
-        var b64text = $(this).data('base64');
-        var decoded = base64DecodingUTF8( b64text );
-        $(this).text( decoded );
-
-        $(this).removeClass('glyphicon glyphicon-eye-open');
-        $(this).css('cursor' , '');
-    });
+    prepareDynamicJSContents();
 
 });
+
+function prepareDynamicJSContents(){
+    $('.click-to-see-text').each(function(){
+        var b64text = $(this).data('base64');
+        var decoded = base64DecodingUTF8( b64text );
+        $(this).data('plaintext' , decoded);
+
+        $(this).addClass('blurred-content');
+        $(this).text(decoded.replace(/[a-zA-Z0-9]/g , "o") );
+    });
+    $('.click-to-see-text').css('cursor' , 'pointer');
+    $('.click-to-see-text').click(function(){
+        $(this).removeClass('blurred-content');
+        $(this).text( $(this).data('plaintext') );
+    });
+}
 
 
 function scrollToElement( $element , time = 500, success ){ 
