@@ -101,3 +101,27 @@ function base64DecodingUTF8(encoded) {
     var str = new TextDecoder('utf-8').decode(b64Encoded);
     return str;
 }
+
+
+function loadFacebookCommentBox(){
+    
+    $('.fb-comments').attr('data-href' , window.location.href );
+    $('.fb-like').attr('data-href' , window.location.href );
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '660627137442920',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+}

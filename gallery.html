@@ -64,6 +64,7 @@
                     <li><a href="#session4">Session on Google Code Project</a></li>
                 </ul>
                </div>
+               <div class="fb-like" data-href="." data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
             </div>
             <div class="col-sm-9 panel content-panel">
 
@@ -134,6 +135,8 @@
                         </div>
                     </div>
 
+                    <div class="fb-comments" data-href="." data-numposts="5" data-width="100%"></div>
+
                 </div>
         </div>
     </div>
@@ -147,5 +150,10 @@
         <script src="js/lightgallery.all.min.js"></script>
         <script src="js/scripts.js"></script>
 
+        <script>
+	    $(function(){
+	        loadFacebookCommentBox();
+	    });
+        </script>
     </body>
 </html>
