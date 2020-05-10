@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>BSADD Blog - BUET System Analysis, Design and Development community</title>
+        <meta name="description" content="BUET, System Analysis, Design and Development, System Design" />
+        <meta name="author" content="Md Imran Hasan Hira">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link href="../css/styles.css" rel="stylesheet">
+        <script>
+
+            function urlParam(name){
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                if (results==null){
+                   return null;
+                }else{
+                   return results[1] || 0;
+                }
+            };
+
+            var allPosts = [
+                {
+                    id              : 1,
+                    title           : "Memoir to my younger self",
+                    author          : "K M Sabidur Rahman",
+                    authorPosition  : "MS, PhD Student, CS, UC Davis",
+                    authorUrl       : "https://www.linkedin.com/in/kmsabidurrahman",
+                    authorBatch     : "05"
+                }
+                ,{
+                    id              : 2,
+                    title           : "গরু রচনা",
+                    author          : "Md Imran Hasan Hira",
+                    authorPosition  : "Software Developer, Booking.com B.V.",
+                    authorUrl       : "https://www.linkedin.com/in/imranhasanhira/",
+                    authorBatch     : "07"
+                }
+                ,{
+                    id              : 3,
+                    title           : "Every search begins with beginner's luck",
+                    author          : "Maksud Alam Chowdhury",
+                    authorPosition  : "Software Engineer, ZS Solutions Ltd.",
+                    authorUrl       : "https://www.linkedin.com/in/maksudc",
+                    authorBatch     : "08"
+                }
+                ,{
+                    id              : 4,
+                    title           : "Timetravel - How to work after deadline, and submit it before deadline",
+                    author          : "মোঃ তানজীম হোসেন সিফাত",
+                    authorPosition  : "Senior Software Engineer, Reve Systems Ltd",
+                    authorUrl       : "https://www.linkedin.com/in/tanjimhossainsifat",
+                    authorBatch           : "08"
+                }
+                ,{
+                    id              : 5,
+                    title           : "A Horror Story!",
+                    author          : "Taskinoor Hasan Sajid",
+                    authorPosition  : "Senior Software Analyst, IPvision Canada Inc",
+                    authorUrl       : "https://www.linkedin.com/in/taskinoor/",
+                    authorBatch     : "03"
+                }
+                ,{
+                    id              : 6,
+                    title           : "বিদেশে উচ্চশিক্ষা, ক্যারিয়ার, সময় এবং বাস্তব ভাবনা-১",
+                    author          : "সৈকত চক্রবর্ত্তী",
+                    authorPosition  : "Graduate Teaching Assistant, University of Virginia",
+                    authorUrl       : "https://www.linkedin.com/in/saikatch107/",
+                    authorBatch     : "08"
+                }
+                ,{
+                    id              : 7,
+                    title           : "Few basics while working in companies",
+                    author          : "Md. Iftekharul Islam",
+                    authorPosition  : "Senior Software Engineer @Enosis Solutions",
+                    authorUrl       : "https://www.linkedin.com/in/md-iftekharul-islam-26549372/",
+                    authorBatch     : "08"
+                }
+                ,{
+                    id              : 8,
+                    title           : "Story of a boy to an engineer",
+                    author          : "Rafi Kamal",
+                    authorPosition  : "Software Engineer at Google",
+                    authorUrl       : "https://www.linkedin.com/in/rafikamal/",
+                    authorBatch     : "10"
+                }
+                ,{
+                    id              : 9,
+                    title           : "Tips for grad school",
+                    author          : "Sarah Masud Preum",
+                    authorPosition  : "PhD Candidate, University of Virginia",
+                    authorUrl       : "https://www.linkedin.com/in/sarah-masud-preum-22aa7421/",
+                    authorBatch     : "07"
+                }
+                ,{
+                    id              : 10,
+                    title           : "Somebody has to solve the hard problems",
+                    author          : "Sheikh Shakib Ahmed",
+                    authorPosition  : "Software Engineering Intern at Cisco",
+                    authorUrl       : "https://www.linkedin.com/in/magurmach/",
+                    authorBatch     : "10"
+                }
+                ,{
+                    id              : 11,
+                    title           : "Opportunities after graduating from CSE, BUET",
+                    author          : "Mohammad Rezaur Rahman",
+                    authorPosition  : "Software Development Engineer at Amazon Web Services",
+                    authorUrl       : "https://www.linkedin.com/in/mohammra/",
+                    authorBatch     : "04"
+                }
+                ,{
+                    id              : 12,
+                    title           : "Step towards of being a software developer",
+                    author          : "Faysal Hossain",
+                    authorPosition  : "Engineer at Kona Software Lab Ltd.",
+                    authorUrl       : "https://www.linkedin.com/in/faysalhossain2007/",
+                    authorBatch     : "10"
+                }
+                ,{
+                    id              : 13,
+                    title           : "It's all the hurdles that make you confident",
+                    author          : "Lubaba Nuzhat Tasneem",
+                    authorPosition  : "Graduate Teaching Assistant at George Mason University",
+                    authorUrl       : "https://www.linkedin.com/in/lubaba-nuzhat-tasneem-16a5a13a/",
+                    authorBatch     : "07"
+                }
+                ,{
+                    id              : 14,
+                    title           : "কথায় আছে, ডরাইলেই ডর",
+                    author          : "Safayar Ahmed",
+                    authorPosition  : "Java & Intershop developer at Eci Nederland B.V.",
+                    authorUrl       : "https://www.linkedin.com/in/safayar-ahmed/",
+                    authorBatch     : "04"
+                }
+                ,{
+                    id              : 15,
+                    title           : "Days after buet",
+                    author          : "Rabby Alam",
+                    authorPosition  : "Engineer at KONA Software Lab Limited.",
+                    authorUrl       : "https://www.linkedin.com/in/rabbialam/",
+                    authorBatch     : "08"
+                }
+                ,{
+                    id              : 16,
+                    title           : "USA তে চাকুরী এবং উচ্চশিক্ষা ",
+                    author          : "Sazzadur Rahaman",
+                    authorPosition  : "Phd Student in Virginia Tech",
+                    authorUrl       : "https://www.linkedin.com/in/sazzad114/",
+                    authorBatch     : "06"
+                }
+                ,{
+                    id              : 17,
+                    title           : "শুধু ক্লাসে ফার্স্ট হলেই কি শিক্ষক হওয়া যায় - নাকি এর বাইরেও কিছু দায়িত্ব থাকে ?",
+                    author          : "নাম প্রকাশে অনিচ্ছুক",
+                    authorPosition  : "Lecturer, Department of CSE at Ahsanullah University of Science & Technology",
+                    authorUrl       : "",
+                    authorBatch     : ""
+                }
+                ,{
+                    id              : 18,
+                    title           : "Why not make your career fault tolerant",
+                    author          : "Kazi Sinthia Kabir",
+                    authorPosition  : "Graduate Student at University of Utah",
+                    authorUrl       : "https://www.linkedin.com/in/kazi-sinthia-kabir/",
+                    authorBatch     : "09"
+                }
+                ,{
+                    id              : 19,
+                    title           : "একজন প্রবাসী \"গবেষকের\" অভিজ্ঞতা",
+                    author          : "Farig Sadeque",
+                    authorPosition  : "Research Associate at University of Arizona",
+                    authorUrl       : "https://www.linkedin.com/in/farig-sadeque-a982125b/",
+                    authorBatch     : "07"
+                }
+                ,{
+                    id              : 1000,
+                    title           : "",
+                    author          : "",
+                    authorPosition  : "",
+                    authorUrl       : "",
+                    authorBatch     : "",
+                    inactive        : 1
+                }
+            ];
+            var post;
+
+            var postId = urlParam('postid');
+            if( postId && postId.trim() ) {
+                postId = postId.trim();
+
+                //A super efficient way to find post by id. Since posts are maintained manually and currently too less, this will suffice
+                for(var i=0;i<allPosts.length;i++){
+                    if( allPosts[i].id == postId ){
+                        post = allPosts[i];
+                        document.title = 'BSADD Blog - ' + post.title;
+                        break;
+                    }
+                }
+            }
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-90568548-3', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="banner" class="row">
+                <div class="col-xs-12">
+                    <span>
+                        <img width="100" style="margin: 5px; display: inline;" src="../img/buet_logo_300.png" />
+                        <h1 style="color: #DDDDDD; display:inline;"> Department of CSE, BUET </h1>
+                    </span>
+                    <span> <h2 style="color: #DDDDDD;"> BUET System Analysis, Design and Development community </h2> </span>
+                </div>
+            </div>
+
+            <div class="row navbar navbar-default">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills">
+                        <li role="presentation"> <a href="../">Home</a> </li>
+                        <li role="presentation"> <a href="../gallery.html">Gallery</a> </li>
+                        <li role="presentation"> <a href="../links.html">B'Links</a> </li>
+                        <li role="presentation"> <a href="../blog">BSADD Blog</a> </li>
+                        <li role="presentation"> <a href="../connect">BSADD Connect</a> </li>
+                        <li role="presentation"> <a href="../about">About</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <div id="sidebar">
+                        <ul id="nav-items" class="nav nav-stacked">
+                            <li><h3 class="highlight"> <a href=".">BSADD Blog </a> <i class="glyphicon glyphicon-dashboard pull-right"></i></h3></li>
+                        </ul>
+                        <div class="author-content">
+                            <div>
+                                <a class="post-author" target="_blank" href="."></a><br/>
+                                <span class="post-author-position"></span>
+                            </div>
+                            <hr/>
+                            <div>
+                                <div class="fb-like" data-href="." data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-9 panel content-panel text-justify">
+                    <div id="all-post-container" class="hidden">
+                        <h2></h2>
+                        <p>We believe that we have a lot to learn from our alumni. We have a strong network and they are all working great in different places. We have also freshers coming out from buet every year (yeah, it's regular now). A simple thought came as a flash, that if we could've connected all those wise minds with the young-energetic minds, some good must happen. And that resulted this page. </p>
+                        <p>We asked our alumni to write something for our juniors. It's hard for people to make time within their busy schedules. But we <a href="https://www.facebook.com/groups/341677349195065/permalink/1531865696842885/">tried</a>, and <a href="https://www.facebook.com/groups/341677349195065/permalink/1556539564375498/">tried harder</a>. And we can say with a great joy, that they did write something. Actually they wrote a lot. On this page, we will be publishing those writings sequentially.
+                        </p>
+                        <p>Disclaimer: It's been very interesting when we started to ask for writing from people. The most common reply we get is basically "vai, ami ki parobo likte" / "amai to ovabe likhte parina" / "I am not that much good" and worst of them "I don't have any experience". Well, the interesting part is, we don't want a best writing. Everyone has their own style of writing. Someone can really write good, and someone struggles with grammers :p But at the end we would like to hear something. Anything that our alumni want to share with us. That's what matters. So, please don't think about your writing skill, don't be shy of what you want to share, leave all those high expectation of writing a oscar winning novel / bestselling book. Just write it down.
+                        </p>
+
+
+                        <div id="post-index-container">
+                        </div>
+
+                        <p>More posts are coming...</p>
+
+                        <hr/>
+                        <ul class="pager"><li><a class="show-fb-comment" href="">Comments</a></li></ul>
+
+
+                        <div id="sample-index-container" class="hidden alert alert-info">
+                            <a class="post-name" href=""></a> - <span class="post-author"></span>
+                        </div>
+                    </div>
+
+                    <div id="single-post-container" class="hidden">
+                        <p class="h2 post-title"></p><hr/>
+                        <div class="post-content"></div>
+
+                        <hr/>
+                        <ul class="pager pull-right">
+                            <li><a class="show-fb-comment" href="">Comments</a></li>
+                            <li><a href=".">Go to all blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="fb-comments" data-href="." data-numposts="5" data-width="100%"></div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- script references  -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script type="text/javascript">
+
+$(function(){
+    if( post ){
+        loadSinglePost(post);
+    }else{
+        loadAllPosts();
+    }
+    $('.fb-comments').attr('data-href' , window.location.href );
+    $('.fb-like').attr('data-href' , window.location.href );
+
+    //$('.show-fb-comment').click(function(){
+        loadFacebookCommentBox();
+        //return false;
+    //});
+});
+
+function loadAllPosts(){
+    $('#all-post-container').removeClass('hidden').addClass('show');
+
+    for(var i=0;i<allPosts.length;i++){
+        var post = allPosts[i];
+        console.log( post.inactive );
+        if( post.inactive ) continue;
+        $blogComponent = $('#sample-index-container').clone();
+        $blogComponent.removeAttr('id');
+        $blogComponent.removeClass('hidden').addClass('show');
+        $blogComponent.find('.post-name').attr('href' , getPostUrl(post.id) );
+        $blogComponent.find('.post-name').text( post.title );
+        $blogComponent.find('.post-author').text( getPostAuthorBatch( post ) );
+        $('#post-index-container').append($blogComponent);
+    }
+}
+
+function getPostUrl(postId){
+    return '?postid='+postId;
+}
+
+function getPostAuthorBatch( post ){
+    return post.author + " '" + post.authorBatch;
+}
+
+function getPostContentUrl(postId){
+    postId = ('000'+postId).slice(-3);
+    return 'posts/'+postId + '.data';
+}
+
+function loadSinglePost(post){
+    $singlePostElement = $('#single-post-container');
+    $singlePostElement.removeClass('hidden').addClass('show');
+
+    $singlePostElement.find('.post-title').text( post.title ) ;
+
+    var postUrl = getPostContentUrl(post.id);
+    $singlePostElement.find('.post-content').load( postUrl );
+
+    $('.post-author').text( getPostAuthorBatch( post ) );
+    $('.post-author').attr( 'href' , post.authorUrl );
+    $('.post-author-position').text( post.authorPosition );
+}
+
+function loadFacebookCommentBox(){
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '660627137442920',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "http://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+}
+
+        </script>
+    </body>
+</html>
