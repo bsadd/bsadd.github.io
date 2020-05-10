@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+{% include head.html %}
 
-  {% include head.html %}
+<body>
 
-  <body>
+  {% include header.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div id="sidebar">
+          <ul id="nav-items" class="nav nav-stacked">
+            <li>
+              <h3 class="highlight"> <a href="">{{ page.sideBar_highlight }}</a> <i
+                  class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+            </li>
+            {% for item in page.sidebar %}
+            <li><a href="#{{ item.url }}">{{ item.urlName }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
+
+
+
+      {{ content }}
     </div>
+  </div>
+  {% include js_link.html %}
 
-    {% include footer.html %}
-
-  </body>
+</body>
+<!-- script references -->
 
 </html>
