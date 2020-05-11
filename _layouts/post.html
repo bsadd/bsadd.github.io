@@ -1,15 +1,54 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<body>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  {% include header.html %}
 
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div id="sidebar">
+          <ul id="nav-items" class="nav nav-stacked">
+            <li>
+              <h3 class="highlight"> <a href="">BSADD Blog</a> <i
+                  class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+            </li>
+            
+            <li><a href="{{ page.authorUrl}}">{{ page.author }} '{{page.authorBatch }} </a></li>
+            <li>{{ page.authorPosition }}</li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-9 panel content-panel text-justify">
+
+        <!-- <div id="single-post-container"> -->
+        <p class="h2 post-title"></p>
+        <h1>{{ page.title }} </h1>
+        <hr>
+        <div class="post-content"></div>
+        
+        {{ content }}
+        <hr />
+        <ul class="pager pull-right">
+          <li><a class="show-fb-comment" href="">Comments</a></li>
+          <li><a href=".">Go to all blogs</a></li>
+        </ul>
+        <!-- </div> -->
+        <div class="fb-comments" data-href="." data-numposts="5" data-width="100%"></div>
+      </div>
+
+
+    </div>
+  </div>
+  {% include js_link.html %}
+
+</body>
+<!-- script references -->
+
+</html>

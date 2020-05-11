@@ -94,4 +94,17 @@ sidebar:
             <a href="img/session4/006.jpg"><img src="timg/session4/006.jpg" /></a>
         </div>
     </div>
+
+    <div >
+        <h2>{{ page.sidebar[4].heading }} </h2>
+        <hr />
+        <div id="session5" class="photo-album">
+            {% for image in site.static_files %}
+            {% if image.path contains '/img/session1' %}
+            <a href="{{ image.path }}"><img src="{{ image.path }}" style="width: 20%;" /></a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
