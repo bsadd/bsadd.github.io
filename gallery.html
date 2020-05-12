@@ -1,110 +1,79 @@
 ---
-layout: default
-title: BSADD Gallery - BUET System Analysis, Design and Development community
-permalink: /gallery/
-sideBar_highlight: "Gallery"
-
-sidebar: 
-    - urlName: "1st Intra-Department System Design and Development Contest"
-      url : "sddc1"
-      heading: "1st Intra-Department System Design and Development Contest"
-
-    - urlName: "MVC Framework"
-      url: "session1"
-      heading: "MVC Framework"
-
-    - urlName: "Quiz! Quiz!"
-      url: "session2"
-      heading: "Quiz! Quiz!"
-
-    - urlName: "Session 3"
-      url: "session3"
-      heading: "Session 3"
-
-    - urlName: "Session on Google Code Project"
-      url: "session4"
-      heading: "Session on Google Code Project"
-
 ---
-<div class="col-sm-9 panel content-panel">
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
 
-    <div id={{ page.sidebar[0].url }}>
-        <h2>{{ page.sidebar[0].heading }} </h2>
-        <hr />
-        <div class="photo-album">
-            <a href="/img/saddc1/001.jpg"><img src="/timg/saddc1/001.jpg" /></a>
-            <a href="/img/saddc1/002.jpg"><img src="/timg/saddc1/002.jpg" /></a>
-            <a href="/img/saddc1/003.jpg"><img src="/timg/saddc1/003.jpg" /></a>
-            <a href="/img/saddc1/004.jpg"><img src="/timg/saddc1/004.jpg" /></a>
-            <a href="/img/saddc1/005.jpg"><img src="/timg/saddc1/005.jpg" /></a>
-            <a href="/img/saddc1/006.jpg"><img src="/timg/saddc1/006.jpg" /></a>
-            <a href="/img/saddc1/007.jpg"><img src="/timg/saddc1/007.jpg" /></a>
-            <a href="/img/saddc1/008.jpg"><img src="/timg/saddc1/008.jpg" /></a>
+<body>
+
+    {% include header.html %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul id="nav-items" class="nav nav-stacked">
+                        <li>
+                            <h3 class="highlight"> <a href="">BSADD Blog</a> <i
+                                    class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+                        </li>
+
+                        {% for item in site.data.gallery %}
+                        {% assign url = session.imgFolder | split: "/" %}
+                        {% assign url = url[2] %}
+                        <li><a href="#{{ url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-9 panel content-panel">
+
+
+                {% for session in site.data.gallery %}
+
+                {% assign url = session.imgFolder | split: "/" %}
+                {% assign url = url[2] %}
+                <div id={{url}}>
+
+                    <h2>{{ session.title }}</h2>
+                    <hr />
+                    <div id={{url}} class="photo-album">
+                        {% for image in site.static_files %}
+                            {% if image.path contains session.imgFolder %}
+
+                            {% for item in session.imgFolder  %}
+                            {% assign picName = image.path | split: "/" | last %}
+
+                            <a href="{{site.baseurl}}{{ session.imgFolder }}/{{ picName }}">
+                                {% if session.thumbFolder != "" %}
+                                <img src="{{site.baseurl}}{{ session.thumbFolder }}/{{ picName }}" />
+                                {% else %}
+                                <img src="{{site.baseurl}}{{ session.imgFolder }}/{{ picName }}" style="width: 11vw" />
+                                {% endif %}
+                            </a>
+                            {% endfor %}
+                            
+
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+                
+
+
+            </div>
+
+
         </div>
     </div>
+    {% include js_link.html %}
 
+</body>
+<!-- script references -->
 
-    <div id={{ page.sidebar[1].url}}>
-        <h2>{{ page.sidebar[1].heading }} </h2>
-        <hr />
-        <div id="session1" class="photo-album">
-            <a href="/img/session1/001.jpg"><img src="/timg/session1/001.jpg" /></a>
-            <a href="/img/session1/002.jpg"><img src="/timg/session1/002.jpg" /></a>
-            <a href="/img/session1/003.jpg"><img src="/timg/session1/003.jpg" /></a>
-            <a href="/img/session1/004.jpg"><img src="/timg/session1/004.jpg" /></a>
-            <a href="/img/session1/005.jpg"><img src="/timg/session1/005.jpg" /></a>
-            <a href="/img/session1/006.jpg"><img src="/timg/session1/006.jpg" /></a>
-            <a href="/img/session1/007.jpg"><img src="/timg/session1/007.jpg" /></a>
-            <a href="/img/session1/008.jpg"><img src="/timg/session1/008.jpg" /></a>
-        </div>
-    </div>
-
-    <div id={{ page.sidebar[2].url }}>
-        <h2>{{ page.sidebar[2].heading }} </h2>
-        <hr />
-        <div id="session2" class="photo-album">
-            <a href="/img/session2/001.jpg"><img src="/timg/session2/001.jpg" /></a>
-            <a href="/img/session2/002.jpg"><img src="/timg/session2/002.jpg" /></a>
-            <a href="/img/session2/003.jpg"><img src="/timg/session2/003.jpg" /></a>
-            <a href="/img/session2/004.jpg"><img src="/timg/session2/004.jpg" /></a>
-            <a href="/img/session2/005.jpg"><img src="/timg/session2/005.jpg" /></a>
-            <a href="/img/session2/006.jpg"><img src="/timg/session2/006.jpg" /></a>
-        </div>
-    </div>
-
-    <div id={{ page.sidebar[3].url }}>
-        <h2>{{ page.sidebar[3].heading }} </h2>
-        <hr />
-        <div id="session3" class="photo-album">
-            <a href="/img/session3/001.jpg"><img src="/timg/session3/001.jpg" /></a>
-            <a href="/img/session3/002.jpg"><img src="/timg/session3/002.jpg" /></a>
-            <a href="/img/session3/003.jpg"><img src="/timg/session3/003.jpg" /></a>
-        </div>
-    </div>
-
-    <div id={{ page.sidebar[4].url }}>
-        <h2>{{ page.sidebar[4].heading }} </h2>
-        <hr />
-        <div id="session4" class="photo-album">
-            <a href="/img/session4/001.jpg"><img src="/timg/session4/001.jpg" /></a>
-            <a href="/img/session4/002.jpg"><img src="/timg/session4/002.jpg" /></a>
-            <a href="/img/session4/003.jpg"><img src="/timg/session4/003.jpg" /></a>
-            <a href="/img/session4/004.jpg"><img src="/timg/session4/004.jpg" /></a>
-            <a href="/img/session4/005.jpg"><img src="/timg/session4/005.jpg" /></a>
-            <a href="/img/session4/006.jpg"><img src="/timg/session4/006.jpg" /></a>
-        </div>
-    </div>
-
-    <div >
-        <h2>{{ page.sidebar[4].heading }} </h2>
-        <hr />
-        <div id="session5" class="photo-album">
-            {% for image in site.static_files %}
-            {% if image.path contains '/img/session1' %}
-            <a href="{{ image.path }}"><img src="{{ image.path }}" style="width: 20%;" /></a>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-
-</div>
+</html>
