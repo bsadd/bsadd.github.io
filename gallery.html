@@ -1,4 +1,5 @@
 ---
+permalink: /gallery/
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,10 +19,11 @@
                                     class="glyphicon glyphicon-dashboard pull-right"></i></h3>
                         </li>
 
-                        {% for item in site.data.gallery %}
+                        {% for session in site.data.gallery %}
                         {% assign url = session.imgFolder | split: "/" %}
+
                         {% assign url = url[2] %}
-                        <li><a href="#{{ url }}">{{ item.title }}</a></li>
+                        <li><a href="#{{ url }}">{{ session.title }}</a></li>
                         {% endfor %}
 
                     </ul>

@@ -19,6 +19,6 @@ collections:
 
   blogs:
     output: true 
-    permalink: /blogs/:path/
+    permalink: blogs/:path/
   
   
