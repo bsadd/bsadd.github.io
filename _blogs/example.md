@@ -1,12 +1,13 @@
 ---
 layout: post
 
-id              : 1
-title           : "Memoir to my younger self"
-author          : "K M Sabidur Rahman"
-authorPosition  : "MS, PhD Student, CS, UC Davis"
-authorUrl       : "https://www.linkedin.com/in/kmsabidurrahman"
-authorBatch     : "05"
+id              : 19
+title           : একজন প্রবাসী "গবেষকের" অভিজ্ঞতা
+author          : Farig Sadeque
+authorPosition  : Research Associate at University of Arizona
+authorUrl       : https://www.linkedin.com/in/farig-sadeque-a982125b/
+authorBatch     : 07
+published: False
 ---
 
 

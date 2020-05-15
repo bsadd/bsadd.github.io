@@ -1,262 +1,75 @@
 ---
-layout: default
-title: Bunch of Links - BUET System Analysis, Design and Development community 
 permalink: /links/
-sideBar_highlight: "BSADD Links"
-
-sidebar: 
-    - urlName: "Engineering Blogs"
-      url : "engineering"
-      heading: "Engineering Blogs"
-
-    - urlName: "Alumni blogs"
-      url: "alumni-blogs"
-      heading: "Blogs by CSE,BUET alumni"
-
-    - urlName: "Legendary blogs"
-      url: "legendary-blogs"
-      heading: "Other Personal Blogs"
-
-    - urlName: "Interesting titles"
-      url: "interesting-titles"
-      heading: "Interesting Titles"
-
-    - urlName: "Inteview practice materials"
-      url: "interview-practice"
-      heading: "Software engineering interview practice"
-
-    - urlName: "Bunch of books"
-      url: "books"
-      heading: "Bunch of books that no one wants to read, just keeps a collection"
 ---
-<div class="col-sm-9 panel content-panel">
-    <p class="alert alert-warning text-center h3">Yet another internet page for bunch of links</p>
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
 
-    <p id={{   page.sidebar[0].url  }} class="alert alert-info h3"> {{ page.sidebar[0].heading }} </p>
-    <table class="table table-hover">
-        <tr>
-            <td>Booking.com B.V.</td>
-            <td><a href="https://blog.booking.com/"> Booking.com dev blog </a></td>
-        </tr>
-        <tr>
-            <td>Coursera</td>
-            <td><a href="https://building.coursera.org/engineering/">Engineering Coursera</a></td>
-        </tr>
-        <tr>
-            <td>Facebook Inc.</td>
-            <td><a href="https://code.facebook.com/backend/"> Facebook Code </a></td>
-        </tr>
-        <tr>
-            <td>Github</td>
-            <td><a href="https://githubengineering.com/">Github Engineering</a></td>
-        </tr>
-        <tr>
-            <td>Google</td>
-            <td>
-                <a href="https://developers.googleblog.com/search/label/machine%20learning"> Google
-                    Developer Blog - Machine Learning </a>
-                <br /><a href="https://developers.googleblog.com/search/label/developer"> Google Developer
-                    Blog - Developer </a>
-                <br /><a href="http://google-engtools.blogspot.nl/"> Google Engineering Tools</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Heroku</td>
-            <td><a href="https://engineering.heroku.com/">Heroku Engineering Blog</a></td>
-        </tr>
-        <tr>
-            <td>Kickstarter</td>
-            <td><a href="https://kickstarter.engineering/">Kickstarter Engineering - Backing & Hacking</a>
-            </td>
-        </tr>
-        <tr>
-            <td>LinkdeIn</td>
-            <td><a href="https://engineering.linkedin.com/blog">LinkedIn Engineering Blog</a></td>
-        </tr>
-        <tr>
-            <td>Netflix</td>
-            <td><a href="http://techblog.netflix.com/">The Netflix Tech blog</a></td>
-        </tr>
-        <tr>
-            <td>Paypal</td>
-            <td><a href="https://www.paypal-engineering.com/">Paypal Engineering</a></td>
-        </tr>
-        <tr>
-            <td>Pinterest</td>
-            <td><a href="https://engineering.pinterest.com/blog">Pinterest engineering blog</a></td>
-        </tr>
-        <tr>
-            <td>Quora</td>
-            <td><a href="https://engineering.quora.com/">Engineering at Quora</a></td>
-        </tr>
-        <tr>
-            <td>Slack</td>
-            <td><a href="https://slack.engineering/">The Slack Engineering Blog</a></td>
-        </tr>
-        <tr>
-            <td>Spotify</td>
-            <td><a href="https://labs.spotify.com/">Spotify Labs</a></td>
-        </tr>
-        <tr>
-            <td>Stackoverflow</td>
-            <td><a href="https://stackoverflow.blog/engineering/">Stack Overflow Blog – Work of Stack
-                    Overflow's engineering team</a></td>
-        </tr>
-        <tr>
-            <td>Toptal</td>
-            <td><a href="https://www.toptal.com/developers/blog">Toptal Engineering Blog</a></td>
-        </tr>
-        <tr>
-            <td>Twitter</td>
-            <td><a href="https://blog.twitter.com/engineering">The Twitter Engineering Blog</a></td>
-        </tr>
-        <tr>
-            <td>Uber</td>
-            <td><a href="https://eng.uber.com/"> Uber Engineering Blog </a></td>
-        </tr>
-        <tr>
-            <td>Yelp</td>
-            <td><a href="https://engineeringblog.yelp.com/">Yelp Engineering</a></td>
-        </tr>
-    </table>
+<body>
 
-    <p id={{   page.sidebar[1].url }} class="alert alert-info h3"> {{ page.sidebar[1].heading }} </p>
-    <table class="table table-hover">
-        <tr>
-            <td>Abu Zaher Md. Faridee'05</td>
-            <td><a href="https://sites.google.com/site/azmfaridee/">Personal website </a></td>
-        </tr>
-        <tr>
-            <td>Enzam Hossain'07</td>
-            <td><a href="https://enzam.wordpress.com/">Enzam's Blog, Everything, my day to day, technology,
-                    etc.</a></td>
-        </tr>
-        <tr>
-            <td>Ibrahim Rashid'07</td>
-            <td><a href="http://blog.irashid.com/">IRashid's Blog</a>. Also here goes an older one with <a
-                    href="https://anytimeir.wordpress.com/">day to day activities and works.</a></td>
-        </tr>
-        <tr>
-            <td>Ragib Hasan</td>
-            <td><a href="http://ragibhasan.com/blog/">Ragib Hasan's blog</a></td>
-        </tr>
-        <tr>
-            <td>Shafiul Azam Chowdhury'07</td>
-            <td><a href="http://shafiulazam.com/">Personal website</a>, <a
-                    href="https://bdhacker.wordpress.com/">personal blog</a></td>
-        </tr>
-    </table>
+    {% include header.html %}
 
-    <p id={{   page.sidebar[2].url  }} class="alert alert-info h3"> {{ page.sidebar[2].heading }} </p>
-    <table class="table table-hover">
-        <tr>
-            <td>Werner Vogel (CTO, Amazon)</td>
-            <td><a href="http://www.allthingsdistributed.com/">All Things Distributed</a> - weblog on
-                building scalable and robust distributed systems</td>
-        </tr>
-        <tr>
-            <td>Martin Fowler</td>
-            <td><a href="https://www.martinfowler.com/">Martin Fowler's blog</a> -- this guy is awesome!!
-            </td>
-        </tr>
-        <tr>
-            <td>Jeff Dean</td>
-            <td><a href="https://plus.google.com/+JeffDean">Google plus page</a></td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul id="nav-items" class="nav nav-stacked">
+                        <li>
+                            <h3 class="highlight"> <a href="">BSADD Links</a> <i
+                                    class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+                        </li>
+
+                        {% for category in site.data.links %}
+                        <li><a href="#{{ category.category }}">{{ category.side_bar_name }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
 
 
-    <p id={{   page.sidebar[3].url  }} class="alert alert-info h3"> {{ page.sidebar[3].heading }} </p>
-    <table class="table table-hover">
-        <tr>
-            <td>High Scalability</td>
-            <td><a href="http://highscalability.com/">High Scalability</a> -- Building bigger, faster, more
-                reliable websites </td>
-        </tr>
-        <tr>
-            <td>Stories about good software architecture</td>
-            <td><a href="https://sourcemaking.com">https://sourcemaking.com</a></td>
-        </tr>
-        <tr>
-            <td>IBM Developer works</td>
-            <td>
-                https://www.ibm.com/developerworks/library
-                <ul>
-                    <li><a href="https://www.ibm.com/developerworks/library?contentarea_by=Java+technology">Java
-                            Technology</a></li>
-                    <li><a href="https://www.ibm.com/developerworks/library?contentarea_by=Big+data+and+analytics">Big
-                            Data and Analytics</a></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+
+            <div class="col-sm-9 panel content-panel">
+
+                <p class="alert alert-warning text-center h3">Yet another internet page for bunch of links</p>
+
+                {% for category in site.data.links %}
 
 
-    <p id={{   page.sidebar[4].url  }} class="alert alert-info h3"> {{ page.sidebar[4].heading }} </p>
-    <p> (Acknowledgement: There is no shortcut for achievements, and interviewers aren't monkeys. And it's
-        always challenging to consume skills in just hours, which took other people years of dedication. To
-        make stuffs happen, you gotta know how to do things. However, despite of all blockage, if you came
-        up with a plan to improve your current self from your older self, these resources might help you for
-        good practice or following up on trends.)</p>
-    <table class="table table-hover">
-        <tr>
-            <td>System design basics</td>
-            <td><a
-                    href="https://www.hiredintech.com/classrooms/system-design/lesson/52">https://www.hiredintech.com/classrooms/system-design/</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Easy algorithm practice</td>
-            <td><a href="https://leetcode.com/problemset/algorithms/">https://leetcode.com/problemset/algorithms/
-                </a> - Leet code algorithm practice </td>
-        </tr>
-        <tr>
-            <td>Gainlo</td>
-            <td><a href="http://blog.gainlo.co/">What? Interview coaching from Googlers?</a></td>
-        </tr>
-        <tr>
-            <td>Geeks for geeks</td>
-            <td><a href="http://www.geeksforgeeks.org/">A computer science portal for geeks</a></td>
-        </tr>
-        <tr>
-            <td>Career cup</td>
-            <td><a href="https://www.careercup.com/page">Careercup - interview questions</a></td>
-        </tr>
-        <tr>
-            <td>Glassdoor</td>
-            <td><a href="https://www.glassdoor.com">Glassdoor - Interview questions</a></td>
-        </tr>
-        <tr>
-            <td>Hackerrank</td>
-            <td><a href="https://www.hackerrank.com/">https://www.hackerrank.com/</a></td>
-        </tr>
-        <tr>
-            <td>Google Interview</td>
-            <td><a href="https://github.com/jwasham/google-interview-university">A complete computer science
-                    study plan to become a software engineer at Google.</a></td>
-        </tr>
-    </table>
+                <p id="{{   category.category  }}" class="alert alert-info h3"> {{   category.category  }} </p>
+                <p>{{ category.categoryDesc }} </p> 
+                <table class="table table-hover">
+                    {% for links in category.links %}
+                    <tr>
+                        <td style="width: 25%;">{{ links.title }} </td>
+                        <td style="width: 75%;">
+                            {% if  links.links.size == 1 %}
+                            {% for lnk in links.links %}
+                            <a href="{{ lnk.url }}">{{ lnk.linkName }} </a> {{ lnk.linkDesc }}
+                            {% endfor %}
+                            {% else  %}
+                            <ul>
+                                {% for lnk in links.links %}
+                                <li><a href="{{ lnk.url }}">{{ lnk.linkName }} </a> {{ lnk.linkDesc }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
 
-    <p id={{  page.sidebar[5].url }} class="alert alert-info h3">Bunch of books that no one wants to read, just keeps a
-        collection</p>
-    <table class="table table-hover">
-        <tr>
-            <td>Clean Code</td>
-            <td><a href="http://ricardogeek.com/docs/clean_code.pdf">Clean Code - A Handbook of Agile
-                    Software Craftsmanship</a></td>
-        </tr>
-        <tr>
-            <td>Big list of books - 1</td>
-            <td><a
-                    href="http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read">What
-                    is the single most influential book every programmer should read</a></td>
-        </tr>
-        <tr>
-            <td>C++ Books</td>
-            <td><a href="http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list">The
-                    Definitive C++ book guide and list</a></td>
-        </tr>
-    </table>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endfor %}
 
 
-</div>
+            </div>
+
+
+        </div>
+    </div>
+    {% include js_link.html %}
+
+</body>
+<!-- script references -->
+
+</html>
