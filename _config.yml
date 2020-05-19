@@ -14,11 +14,13 @@ github_username:  jekyll
 markdown: kramdown
 
 collections:
-  images:
-    output: true
-
+  activities:
+    output: true 
+    permalink: activities/:path/
   blogs:
     output: true 
     permalink: blogs/:path/
+
+
   
   
