@@ -5,6 +5,9 @@ navmenu:
   - title: Gallery
     path: "gallery/"
 
+  - title: Activities
+    path: "activities/"
+
   - title: B'Links
     path: "links/"
 

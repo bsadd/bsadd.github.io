@@ -1,0 +1,75 @@
+---
+permalink: /activities/
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+
+
+    {% capture filtered_titles_array %}{% for item in site.sessions %}{% assign category = item.path | split: "/" %}{% assign cat = category[1] %}{{cat}};{% endfor %}{% endcapture %}
+    {% assign uniqList = filtered_titles_array| split: ';'  %}
+    {% assign uniqList = uniqList | uniq %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul id="nav-items" class="nav nav-stacked">
+                        <li>
+                            <h3 class="highlight"> <a href="">BSADD Sessions</a> <i
+                                    class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+                        </li>
+
+                        {% for category in site.data.activitiesByCategory %}
+                        <li><a href="#{{ category.category }}">{{ category.side_bar_name }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-sm-9 panel content-panel">
+
+
+                <p class="alert  text-center h3" style="background-color: rgb(44, 62, 80) ;color:white">Here are some of
+                    the sessions conducted by BSADD </p>
+
+                {% for category in site.data.activitiesByCategory %}
+                <p id="{{   category.category  }}" class="alert alert-info h3"> {{   category.category  }} </p>
+                <p>{{ category.categoryDesc }} </p>
+                <table class="table table-hover">
+                    
+                    {% for file in site.activities %}
+                    {% if file.path contains category.sessionFolderPath %}
+                    <tr>
+                        <td style="width: 25%;">{{ file.title }} </td>
+                        <td style="width: 75%;">
+                            <a href="{{ site.baseurl }}{{ file.url  }}">{{ file.linkName }} </a> {{ file.linkDesc }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% endfor %}
+                </table>
+                {% endfor %}
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    {% include js_link.html %}
+
+</body>
+<!-- script references -->
+
+</html>
