@@ -3,47 +3,64 @@
 {% include head.html %}
 
 <body>
-
   {% include header.html %}
+
+  {% assign category = page.url | split: '/' %}
+  {% assign overview_url = '/'' | append:  category[1] | append: '/' | append:  category[2] | append: '/' | append:  'overview/' %}
+  {% assign category = category[-2] %}
 
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
         <div id="sidebar">
           <ul id="nav-items" class="nav nav-stacked">
+
             <li>
-              <h3 class="highlight"> <a href="">BSADD Blog</a> <i
-                  class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+              <h3 class="highlight">
+                <a href="">BSADD Blog</a>
+                <i class="glyphicon glyphicon-dashboard pull-right"></i>
+              </h3>
             </li>
-            {% for guest in  page.guests %}
-            <li><a href="{{ guest.link }}">{{ guest.name }} </a></li> 
-            - {{ guest.position }}
+            <li>
+              <a href="{{ site.baseurl }}{{ overview_url  }}">Overview </a>
+            </li>
+            {% for file in site.activities %}
+            {% if file.path contains category %}
+
+            <li>
+              <a href="{{ site.baseurl }}{{ file.url  }}">{{ file.linkName }}</a>
+            </li>
+            {% endif %}
+
             {% endfor %}
+
           </ul>
         </div>
       </div>
 
-
-
       <div class="col-sm-9 panel content-panel text-justify">
-
         <!-- <div id="single-post-container"> -->
         <p class="h2 post-title"></p>
-        <h1>{{ page.title }} </h1>
-        <hr>
+        <h1>{{ page.title }}</h1>
+        <hr />
         <div class="post-content"></div>
-        <div class='row'> 
-            <div class="col-md-10 col-md-offset-1" >
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="{{ page.youtubeLink }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
+
+        {% if  page.youtubeLink %}
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="{{ page.youtubeLink }}" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-            
+          </div>
         </div>
         <div style="height: 15px;"></div>
-        <div class='row'> 
-            {{ content }}
-
+        {% else %}
+        {{ page.desc }}
+        {% endif %}
+        <div class="row">
+          {{ content }}
         </div>
         <hr />
         <ul class="pager pull-right">
@@ -53,12 +70,9 @@
         <!-- </div> -->
         <div class="fb-comments" data-href="{{ site.baseurl }}." data-numposts="5" data-width="100%"></div>
       </div>
-
-
     </div>
   </div>
   {% include js_link.html %}
-
 </body>
 <!-- script references -->
 
