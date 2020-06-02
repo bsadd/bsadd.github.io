@@ -6,7 +6,7 @@
   {% include header.html %}
 
   {% assign category = page.url | split: '/' %}
-  {% assign overview_url = '/'' | append:  category[1] | append: '/' | append:  category[2] | append: '/' | append:  'overview/' %}
+  {% assign overview_url = '/' | append:  category[1] | append: '/' | append:  category[2] | append: '/' | append:  'overview/' %}
   {% assign category = category[-2] %}
 
   <div class="container">

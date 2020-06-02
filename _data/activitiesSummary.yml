@@ -1,3 +1,6 @@
+# This file contains data for activity table displayed at homepage. items are displayed in reverse
+# order 
+
 - title: "First Session of BSADD"
   date: 10th May, 2012
   sublist: 
