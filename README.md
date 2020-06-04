@@ -6,6 +6,14 @@ Also a latest blogs can be found on https://medium.com/bsadd
 
 Probable proxy location is http://bsadd.org/
 
+# Requirement
+
+- You need to have  [Jkeyll](https://jekyllrb.com/) installed on your local machine
+
+# Setting-up the project
+- Clone the repo on your local machine 
+-  Run `bundle exec jekyll serve` command and website will be served on localhost
+
 # Updating Site
 ---
 ## Adding new session to gallery:
