@@ -21,6 +21,8 @@ The interview was taken by  Shashata  Sawmya and Mahmud Musfique.
 ## Questions
 
 1. If someone wants to go to Japan for a Ph.D., then which processes should they follow?
+
+
 ANS: In order to apply for a Ph.D., university selection is a major factor. We generally pick up varsities having global recognition or well known around the globe. 
 But, global ranking is not enough. There are many varsities in Japan that might not be popular outside the country but have a stable reputation within the country. In order to 
 familiarize their native universities, the Japanese authority initiated a project named “Top Global University Project”. Numerous varsities of Japan are mixed up into two types; 
@@ -31,30 +33,51 @@ tenure, unlike North American varsities where funding is given. Here, 2 semester
 September.
 
 
+
+
 2. Do we need to give GRE/TOEFL/IELTS  or any language testing exam for higher studies in Japan?
+
+
 ANS: In majority cases,  GRE is not required. Acceptance of IELTS/TOEFL depends on the university. If the medium of instruction is English at the undergraduate level, then the 
 language skill is exempted. Moreover, matching the field of interest also plays a role.
 
+
+
+
 3. What approach should one take if one is interested in pursuing a job in Japan rather than studying there?
+
+
 ANS: Internal networking plays a great role here. People usually come to know about overseas training and concerned jobs through people from social sites, websites, and online 
 notices. So, one must be vigilant in searching for jobs and look into websites for training sessions and related job opportunities. Websites like daijob.com make a list of 
 available jobs n Japan. You can go there and take a look. Besides,  go to job fairs. Companies set up stalls there and people submit their CV. This also comes in handy. 
 Shortlist some of the company names you prefer and check out their websites. In this way, you can get an idea of open positions.
 
 
+
+
 4. Do Japanese universities accept Ph.D. students without an MS degree?
+
+
 ANS: While applying to a university, a guide book is generally provided with all the information a student might need. There is a prerequisite section in that guidebook, with 
 about 4-5 points. If a student does not possess an MS degree, but significant work experience is present which is comparable to an MS degree, then the exemption is given by 
 professors. But absence of an MS degree might prove to be troublesome for a Ph.D. Significant profile matching is also important. Your field of interest must match with that of 
 the professor.  
 
 
+
+
 5. I don’t want to do a PhD, but want to get an MS degree in Japan with a scholarship. Is it possible?
+
+
 ANS: There is a good opportunity for a student to get an MS degree compared to North America. North American universities have no funding. Here in Japan, a scholarship is given.
 One popular scholarship is the MEXT scholarship. It is competitive but good. The scholarship is given for the full tenure of the MS degree.
 
 
+
+
 6. What are some major problems for BD natives in the Japanese industry?
+
+
 ANS: One main problem more or less every people face is food in Japan. Here, food is cooked with less/no spices. These foods are also raw/semi-raw. So, people suffer for food. 
 But living here is more or less convenient. Another problem people face is learning the native language. Japan is not an immigrant dominant country. So in order to communicate 
 with people at the beginning, one might face problems. So, learning some basic words could help them. Most Japanese work in a processed way and each of their work is properly 
@@ -62,59 +85,95 @@ documented, which is sometimes time-consuming. Some may become impatient due to 
 cope up with the environment.
 
 
+
+
 7. Do we need to work heavily or work beyond working hours?
+
+
 ANS: A common myth about Japanese people is – Japanese overwork. But their overtime concept is a little different. The labor law is very strict here and mostly favors the 
 employees than the employer. So, without necessity, a company never forces its employees to overwork. But it depends, like a day before a possible deadline – employees overwork
 to finish their job. Moreover, they are separately paid for their overwork, because overwork has a separate pay-scale.  But the conception that no job is without overtime is
 completely wrong. 
 
 
+
+
 8. I have a fear of the Japanese language. How much should I learn it in order to settle there? Is English used frequently there in day-to-day life?
+
+
 ANS: For the short term, it may not be problematic. You can convey your message by broken words if you wish or sign language if you don’t have the time to learn the language. 
 But, in the long term, one must emphasize learning the Japanese language. In offices, documentations are available more in Japanese rather than in English. So it might seem 
 troublesome to work there.
 
 
+
+
 9. We only know about software engineering but there are so many other fields like product design, development, management. How did you know about other fields? Tell us about
 your typical day.
+
+
 ANS: My office starts at 8.45 so I wake up at around 5 and get on a train around 7 a.m. Then I greet people and we set our 2-3 weeks agenda through meetings. Then take lunch at 
 around 11. After work, I go home at 5.30 p.m. Japanese people are very strict about their timing.Now my work is data science and system. Here in Japan, I see people put a lot of
 effort into management because without proper management any project takes up a huge amount of time. It’s very important to have proper management along with the coding. But I 
 didn’t see that in Bangladesh.
 
 
+
+
 10. How do you manage a PhD and work-life simultaneously? Is your work hour reduced? 
+
+
 ANS: I have to work around 8 hours a day. There is no reduction. Also if the fields of one’s research and work are different, then it’s not possible to do both. Again, my 
-professor is flexible as he gives me time after evening and in weekends. And I can work for my research remotely. So with hard work, I am pursuing both. 
+professor is flexible as he gives me time after evening and in weekends. And I can work for my research remotely. So with hard work, I am pursuing both.
+
+
 
 
 11. Is the Japanese industry very competitive?
+
+
 ANS: People mostly should require loyalty and core interest in their work. In Japan, they see passion. If someone only has 50% skill or background to do a certain work, they can
 learn from different pieces of training provided here. So, anyone who is interested to learn and work, they can do it properly here.People of our country aren’t really prepared 
 for Japanese Gaming Industries as our curriculum doesn’t provide much content regarding this. But Japanese people encourage courage and confidence. A graduate can learn game 
 development personally and can apply for the job confidently. 
 
 
+
+
 12. How did you make a switch from EEE to CSE?
+
+
 ANS: Basic engineering fields are EEE, Mechanical, Civil, and Architecture. But fields are expanding. And there are many overlapping projects which require works from different 
 subjects. We can see the curriculums of a university and the works of professors. If we see something in CSE collaborate with our work at least 50%, then it can be a good 
 opportunity to switch your field. 
 
 
+
+
 13. How can I prepare myself for switching to CS from the 2nd or 3rd year of BSc?
+
+
 ANS: Sometimes we go for subjects which are trending. But a student should study the fields more and more and try to field something that interests him/her and try to prepare 
 him/herself for that. Even at work, if someone works in a big company, then he/she can switches from one project to another according to his/her preference.  Also, we are not 
 enough focused. So if we try to focus more in our work rather than frequent switching, I think it’ll be good for us.
 
 
+
+
 14. What do you have to say to 1st and  2nd year students?
+
+
 ANS: We don’t have many courses related to our subject in the 1st and 2nd year. After 3rd year, one can decide in which field she/he will work or study. I think a student should
 work on their academics and try to keep a good CGPA in the early years of her/his BSc. Again, It’s very important to maintain a full profile like you have to know the areas 
 theoretically along with practical knowledge. We have to gain knowledge so that we don’t follow things blindly. Also, it will be beneficial for us if you discuss this more and 
 more.
 
 
+
+
 15.Tell us the best way to join Japanese Software/Tech Industries. What sort of opportunities are available to BUET undergrad students after graduation?
+
+
 ANS: There are many approaches like we can have our portfolio ready all the time with an active LinkedIn profile. Also, we can take an exam which is provided by BCSC. It’s a 
 collaboration with the Japanese IT industry. B-JET programs are also very helpful. There are many branches of Japanese companies in Bangladesh. We can reach them. Again, if we 
 lack the skillset and job experience for a particular job, still we can apply for it. There is no harm in applying for jobs in online. Through a set of online interviews, one 
@@ -124,9 +183,13 @@ are some helpful links provided by Imdad vai):
 
  [Mext](https://tgu.mext.go.jp/en/)
  [Jasso](https://www.jasso.go.jp/en/study_j/scholarships/brochure.html)
+ 
+ 
 
 
 16. How are people’s mentality in Japan whether they are racist or not?
+
+
 ANS: The mindset of people in Japan is very homogenous. They are not tagged racist. Rather they are very polite and humble. Sometimes when they are asking for anything, they may
 ask that to another Japanese. It’s just human nature.
 
