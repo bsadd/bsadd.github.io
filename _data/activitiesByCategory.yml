@@ -1,7 +1,7 @@
-- category: TechLive
+- category:  TechLive
   side_bar_name: TechLive
-  categoryDesc:
-  sessionFolderpath: "_activities/tech-live"
+  categoryDesc: 
+  sessionFolderPath: "_activities/tech-live"
 
 - category:  Life beyond the borders
   side_bar_name: Life beyond the borders
