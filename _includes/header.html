@@ -2,7 +2,7 @@
   <div id="banner" class="row">
     <div class="col-xs-12">
       <span>
-        <img width="100" style="margin: 5px; display: inline;" src="/img/buet_logo_300.png" />
+        <img width="100" style="margin: 5px; display: inline;" src="{{ site.baseurl }}img/buet_logo_300.png" />
         <h1 style="color: #DDDDDD; display:inline;"> Department of CSE, BUET </h1>
       </span>
       <span> <h2 style="color: #DDDDDD;"> {{ site.title }}</h2> </span>
@@ -13,7 +13,7 @@
     <div class="col-xs-12">
       <ul class="nav nav-pills">
         {% for menu in site.data.site_data.navmenu %}
-            <li role="presentation"> <a href={{ menu.path }}>{{ menu.title }} </a> </li>
+            <li role="presentation"> <a href="{{ site.baseurl }}{{ menu.path }}">{{ menu.title }} </a> </li>
         {% endfor %}
       </ul>
     </div>

@@ -1,6 +1,8 @@
 --- 
 layout: default 
 sideBar_highlight: "BSADD Blog"
+permalink: /postList/
+
 ---
 
 <div class="col-sm-9 panel content-panel text-justify">
@@ -17,7 +19,7 @@ sideBar_highlight: "BSADD Blog"
 
         {% for post in site.blogs %}
         <div id="sample-index-container" class="alert alert-info">
-            <a class="post-name" href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"> 
+            <a class="post-name" href="{{ site.baseurl }}{{ post.url  }}"> 
                 {{ post.title }} </a> - 
              <span class="post-author">{{ post.author }}</span>
         </div>
@@ -34,7 +36,7 @@ sideBar_highlight: "BSADD Blog"
     </div>
 
  
-    <div class="fb-comments" data-href="." data-numposts="5" data-width="100%"></div>
+    <div class="fb-comments" data-href="{{ site.baseurl }}." data-numposts="5" data-width="100%"></div>
 </div>
 
 <!-- 

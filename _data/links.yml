@@ -1,0 +1,239 @@
+# There are already few categories here and links are added under these category. 
+# if new link fall under the existing category add them accordingly. otherwise create new category 
+# and add new link under that category. 
+
+# data format:
+# category: name of the category. ( to be displayed at the heading of links on link page ) 
+# side_bar_name: to be displayed at the sidebar of link page
+# categoryDesc: necessary description about the category. leave blank if nothing to add 
+# links: list of links under the category: 
+#   - title: Title to be displayed ( left column of the link table )
+#     links: ( if multiple links are available under one title , add them all here )
+#       - linkName:  
+#         url: 
+
+
+- category:  Engineering Blogs
+  side_bar_name: Engineering Blogs
+  categoryDesc: 
+  links: 
+  - title: Booking.com B.V.
+    links:
+      - linkName:  Booking.com dev blog 
+        url: https://blog.booking.com/
+  - title: Coursera
+    links:
+      - linkName: Engineering Coursera
+        url: https://building.coursera.org/engineering/
+  - title: Facebook Inc.
+    links:
+      - linkName:  Facebook Code 
+        url: https://code.facebook.com/backend/
+  - title: Github
+    links:
+      - linkName: Github Engineering
+        url: https://githubengineering.com/
+  - title: Google
+    links:
+      - linkName:  Google Developer Blog - Machine Learning
+        url:  https://developers.googleblog.com/search/label/machine%20learning
+      - linkName:  Google Developer Blog - Developer 
+        url: https://developers.googleblog.com/search/label/developer
+      - linkName:  Google Engineering Tools
+        url: http://google-engtools.blogspot.nl/
+  - title: Heroku
+    links:
+      - linkName: Heroku Engineering Blog
+        url: https://engineering.heroku.com/
+  - title: Kickstarter
+    links:
+      - linkName: Kickstarter Engineering - Backing & Hacking
+        url: https://kickstarter.engineering/
+  - title: LinkdeIn
+    links:
+      - linkName: LinkedIn Engineering Blog
+        url: https://engineering.linkedin.com/blog
+  - title: Netflix
+    links:
+      - linkName: The Netflix Tech blog
+        url: http://techblog.netflix.com/
+        linkDesc: "  "
+  - title: Paypal
+    links:
+      - linkName: Paypal Engineering
+        url: https://www.paypal-engineering.com/
+  - title: Pinterest
+    links:
+      - linkName: Pinterest engineering blog
+        url: https://engineering.pinterest.com/blog
+  - title: Quora
+    links:
+      - linkName: Engineering at Quora
+        url: https://engineering.quora.com/
+  - title: Slack
+    links:
+      - linkName: The Slack Engineering Blog
+        url: https://slack.engineering/
+  - title: Spotify
+    links:
+      - linkName: Spotify Labs
+        url: https://labs.spotify.com/
+  - title: Stackoverflow
+    links:
+      - linkName: Stack Overflow Blog – Work of Stack Overflow's engineering team
+        url: https://stackoverflow.blog/engineering/
+  - title: Toptal
+    links:
+      - linkName: Toptal Engineering Blog
+        url: https://www.toptal.com/developers/blog
+  - title: Twitter
+    links:
+      - linkName: The Twitter Engineering Blog
+        url: https://blog.twitter.com/engineering
+  - title: Uber
+    links:
+      - linkName:  Uber Engineering Blog 
+        url: https://eng.uber.com/
+  - title: Yelp
+    links:
+      - linkName: Yelp Engineering
+        url: https://engineeringblog.yelp.com/
+
+
+
+- category:  Blogs by CSE,BUET alumni
+  side_bar_name: Alumni blogs
+  categoryDesc: 
+  links: 
+  - title: Abu Zaher Md. Faridee'05
+    links:
+      - linkName: Personal website 
+        url: https://sites.google.com/site/azmfaridee/
+  - title: Enzam Hossain'07
+    links:
+      - linkName: Enzam's Blog, Everything, my day to day, technology, etc.
+        url: https://enzam.wordpress.com/
+  - title: Ibrahim Rashid'07
+    links:
+      - linkName: IRashid's Blog
+        url: http://blog.irashid.com/
+      - linkName: . Also here goes an older one with day to day activities and works day to day activities and works.
+        url: https://anytimeir.wordpress.com/
+  - title: Ragib Hasan
+    links:
+      - linkName: Ragib Hasan's blog
+        url: http://ragibhasan.com/blog/
+  - title: Shafiul Azam Chowdhury'07
+    links:
+      - linkName: Personal website
+        url: http://shafiulazam.com/
+      - linkName: personal blog
+        url: https://bdhacker.wordpress.com/
+
+
+
+- category:  Other Personal Blogs
+  side_bar_name: Legendary blogs
+
+  categoryDesc: 
+  links: 
+  - title: Werner Vogel (CTO, Amazon)
+    links:
+      - linkName: All Things Distributed
+        url: http://www.allthingsdistributed.com/
+        linkDesc: " - weblog on building scalable and robust distributed systems "
+  - title: Martin Fowler
+    links:
+      - linkName: Martin Fowler's blog
+        url: https://www.martinfowler.com/
+        linkDesc: " -- this guy is awesome!! "
+  - title: Jeff Dean
+    links:
+      - linkName: Google plus page
+        url: https://plus.google.com/+JeffDean
+
+
+
+- category:  Interesting Titles
+  side_bar_name: Interesting titles
+
+  categoryDesc: ""
+  links: 
+  - title: High Scalability
+    links:
+      - linkName: High Scalability
+        url: http://highscalability.com/
+        linkDesc: " -- Building bigger, faster, more reliable websites "
+  - title: Stories about good software architecture
+    links:
+      - linkName: https://sourcemaking.com
+        url: https://sourcemaking.com
+  - title: IBM Developer works
+    links:
+      - linkName: Java Technology
+        url: https://www.ibm.com/developerworks/library?contentarea_by=Java+technology
+      - linkName: Big Data and Analytics
+        url: "https://www.ibm.com/developerworks/library?contentarea_by=Big+data+and+analytics"
+
+
+
+- category:  Software engineering interview practice
+  side_bar_name: Inteview practice materials
+  categoryDesc: >-
+    (Acknowledgement: There is no shortcut for achievements, and interviewers aren't monkeys.
+     And it's always challenging to consume skills in just hours, which took other people years of dedication To make stuffs happen, 
+     you gotta know how to do things. However, despite of all blockage, if you came up with a plan to improve your current self from your older 
+     self, these resources might help you for good practice or following up on trends.)
+  links: 
+  - title: System design basics
+    links:
+      - linkName: https://www.hiredintech.com/classrooms/system-design/
+        url: https://www.hiredintech.com/classrooms/system-design/lesson/52
+  - title: Easy algorithm practice
+    links:
+      - linkName: https://leetcode.com/problemset/algorithms/ 
+        url: https://leetcode.com/problemset/algorithms/
+        linkDesc: " - Leet code algorithm practice "
+  - title: Gainlo
+    links:
+      - linkName: What? Interview coaching from Googlers?
+        url: http://blog.gainlo.co/
+  - title: Geeks for geeks
+    links:
+      - linkName: A computer science portal for geeks
+        url: http://www.geeksforgeeks.org/
+  - title: Career cup
+    links:
+      - linkName: Careercup - interview questions
+        url: https://www.careercup.com/page
+  - title: Glassdoor
+    links:
+      - linkName: Glassdoor - Interview questions
+        url: https://www.glassdoor.com
+  - title: Hackerrank
+    links:
+      - linkName: https://www.hackerrank.com/
+        url: https://www.hackerrank.com/
+  - title: Google Interview
+    links:
+      - linkName: A complete computer science study plan to become a software engineer at Google.
+        url: https://github.com/jwasham/google-interview-university
+
+
+- category:  Bunch of books that no one wants to read, just keeps a collection
+  side_bar_name: Bunch of books
+
+  categoryDesc: 
+  links: 
+  - title: Clean Code
+    links:
+      - linkName: Clean Code - A Handbook of Agile Software Craftsmanship
+        url: http://ricardogeek.com/docs/clean_code.pdf
+  - title: Big list of books - 1
+    links:
+      - linkName: What is the single most influential book every programmer should read
+        url: http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read
+  - title: C++ Books
+    links:
+      - linkName: The Definitive C++ book guide and list
+        url: http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
