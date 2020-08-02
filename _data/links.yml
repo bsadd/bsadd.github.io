@@ -1,3 +1,18 @@
+# There are already few categories here and links are added under these category. 
+# if new link fall under the existing category add them accordingly. otherwise create new category 
+# and add new link under that category. 
+
+# data format:
+# category: name of the category. ( to be displayed at the heading of links on link page ) 
+# side_bar_name: to be displayed at the sidebar of link page
+# categoryDesc: necessary description about the category. leave blank if nothing to add 
+# links: list of links under the category: 
+#   - title: Title to be displayed ( left column of the link table )
+#     links: ( if multiple links are available under one title , add them all here )
+#       - linkName:  
+#         url: 
+
+
 - category:  Engineering Blogs
   side_bar_name: Engineering Blogs
   categoryDesc: 
@@ -83,6 +98,9 @@
     links:
       - linkName: Yelp Engineering
         url: https://engineeringblog.yelp.com/
+
+
+
 - category:  Blogs by CSE,BUET alumni
   side_bar_name: Alumni blogs
   categoryDesc: 
@@ -111,6 +129,9 @@
         url: http://shafiulazam.com/
       - linkName: personal blog
         url: https://bdhacker.wordpress.com/
+
+
+
 - category:  Other Personal Blogs
   side_bar_name: Legendary blogs
 
@@ -130,6 +151,9 @@
     links:
       - linkName: Google plus page
         url: https://plus.google.com/+JeffDean
+
+
+
 - category:  Interesting Titles
   side_bar_name: Interesting titles
 
@@ -150,6 +174,8 @@
         url: https://www.ibm.com/developerworks/library?contentarea_by=Java+technology
       - linkName: Big Data and Analytics
         url: "https://www.ibm.com/developerworks/library?contentarea_by=Big+data+and+analytics"
+
+
 
 - category:  Software engineering interview practice
   side_bar_name: Inteview practice materials
@@ -192,6 +218,8 @@
     links:
       - linkName: A complete computer science study plan to become a software engineer at Google.
         url: https://github.com/jwasham/google-interview-university
+
+
 - category:  Bunch of books that no one wants to read, just keeps a collection
   side_bar_name: Bunch of books
 

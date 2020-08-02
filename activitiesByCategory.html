@@ -17,7 +17,7 @@ permalink: /activities/
 
     <div class="container">
         <div class="row">
-            <!-- <div class="col-sm-3">
+            <div class="col-sm-3">
                 <div id="sidebar">
                     <ul id="nav-items" class="nav nav-stacked">
                         <li>
@@ -28,13 +28,14 @@ permalink: /activities/
                         {% for category in site.data.activitiesByCategory %}
                         <li><a href="#{{ category.category }}">{{ category.side_bar_name }}</a></li>
                         {% endfor %}
+                        <li><a href="#prev_activities">Previous Activities </a></li>
 
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
 
-            <div class="col-sm-12 panel content-panel">
+            <div class="col-sm-9 panel content-panel">
 
 
                 <p class="alert  text-center h3" style="background-color: rgb(44, 62, 80) ;color:white">Here are some of
@@ -60,7 +61,7 @@ permalink: /activities/
                 {% endfor %}
 
 
-                <div id="{{   category.category  }}" class="alert alert-info h3"><span style="color: tomato;">Previous
+                <div id="prev_activities" class="alert alert-info h3"><span style="color: tomato;">Previous
                         Activities </span>
                 </div>
                 <div style="display: flex; justify-content: center;">
