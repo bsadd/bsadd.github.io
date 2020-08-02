@@ -1,3 +1,8 @@
+- category: TechLive
+  side_bar_name: TechLive
+  categoryDesc:
+  sessionFolderpath: "_activities/tech-live"
+
 - category:  Life beyond the borders
   side_bar_name: Life beyond the borders
   categoryDesc: 
@@ -7,4 +12,3 @@
   side_bar_name: Android Workshop 
   categoryDesc: 
   sessionFolderPath: "_activities/AndroidWorkshop"
-
