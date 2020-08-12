@@ -1,10 +1,15 @@
+- category:  Women In Tech
+  side_bar_name: Women In Tech
+  categoryDesc: 
+  sessionFolderPath: "_activities/women-in-tech"
+
 - category:  TechLive
   side_bar_name: TechLive
   categoryDesc: 
   sessionFolderPath: "_activities/tech-live"
 
 - category:  Life Beyond The Borders
-  side_bar_name: Life beyond the borders
+  side_bar_name: Life Beyond The Borders
   categoryDesc: 
   sessionFolderPath: "_activities/life-beyond-the-borders"
 
