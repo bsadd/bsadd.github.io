@@ -16,12 +16,12 @@ guests  :
 
 ***Speaker : Md Kawser Habib***  
 ***Host : Shashata Sawmya***  
-***Written by : Nazmul Islam Ananto, Asif Haider***
+***Written by : Nazmul Islam Ananto***
 
 <br>
 
 #### Description of the guest
-*
+
 Md Kawser Habib completed his bachelor's in CSE from BUET in 2015. He is currently working as a full-time cyber security manager for ECS Lab ltd. After graduation he started working as a software engineer in the industry, and later shifted to the security domain. He has more than 4 years of experience in backend application development and around 1.5 years of experience in the cyber security domain. Some of his core areas of interest are application security, penetration testing and digital forensic. 
 
 <br>
