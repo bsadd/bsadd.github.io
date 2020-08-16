@@ -1,10 +1,15 @@
 - category:  Life beyond the borders
   side_bar_name: Life beyond the borders
-  categoryDesc: 
+  categoryDesc:
   sessionFolderPath: "_activities/Lifebeyondtheborders"
 
-- category:  Android Workshop 
-  side_bar_name: Android Workshop 
-  categoryDesc: 
+- category:  Android Workshop
+  side_bar_name: Android Workshop
+
+  categoryDesc:
   sessionFolderPath: "_activities/AndroidWorkshop"
 
+- category: Engineering Management
+  side_bar_name: Engineering Management
+  categoryDesc:
+  sessionFolderPath: "_activities/engineering-management"
