@@ -2,14 +2,18 @@
   side_bar_name: Life beyond the borders
   categoryDesc:
   sessionFolderPath: "_activities/Lifebeyondtheborders"
-
-- category:  Android Workshop
-  side_bar_name: Android Workshop
-
-  categoryDesc:
-  sessionFolderPath: "_activities/AndroidWorkshop"
+  
+- category: Women in Tech
+  side_bar_name: Women in Tech
+  categoryDesc: 
+  sessionFolderPath: "_activities/WomenInTech"
 
 - category: Engineering Management
   side_bar_name: Engineering Management
   categoryDesc:
   sessionFolderPath: "_activities/engineering-management"
+
+- category:  Android Workshop
+  side_bar_name: Android Workshop
+  categoryDesc:
+  sessionFolderPath: "_activities/AndroidWorkshop"
