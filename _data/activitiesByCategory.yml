@@ -13,6 +13,11 @@
   categoryDesc: 
   sessionFolderPath: "_activities/life-beyond-the-borders"
 
+- category:  Engineering Management
+  side_bar_name: Engineering Management
+  categoryDesc:
+  sessionFolderPath: "_activities/engineering-management"
+
 - category:  Android Workshop 
   side_bar_name: Android Workshop 
   categoryDesc: 
