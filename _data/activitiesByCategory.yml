@@ -1,16 +1,16 @@
 - category:  Women In Tech
   side_bar_name: Women In Tech
-  categoryDesc: 
+  categoryDesc:
   sessionFolderPath: "_activities/women-in-tech"
 
 - category:  TechLive
   side_bar_name: TechLive
-  categoryDesc: 
+  categoryDesc:
   sessionFolderPath: "_activities/tech-live"
 
 - category:  Life Beyond The Borders
   side_bar_name: Life Beyond The Borders
-  categoryDesc: 
+  categoryDesc:
   sessionFolderPath: "_activities/life-beyond-the-borders"
 
 - category:  Engineering Management
@@ -18,7 +18,7 @@
   categoryDesc:
   sessionFolderPath: "_activities/engineering-management"
 
-- category:  Android Workshop 
-  side_bar_name: Android Workshop 
-  categoryDesc: 
+- category:  Android Workshop
+  side_bar_name: Android Workshop
+  categoryDesc:
   sessionFolderPath: "_activities/android-workshop"
