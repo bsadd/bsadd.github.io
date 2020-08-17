@@ -1,9 +1,24 @@
-- category:  Life beyond the borders
-  side_bar_name: Life beyond the borders
+- category:  Women In Tech
+  side_bar_name: Women In Tech
   categoryDesc:
-  sessionFolderPath: "_activities/Lifebeyondtheborders"
+  sessionFolderPath: "_activities/women-in-tech"
 
-- category:  Women in Tech
-  side_bar_name: Women in Tech
+- category:  TechLive
+  side_bar_name: TechLive
   categoryDesc:
-  sessionFolderPath: "_activities/WomenInTech"
+  sessionFolderPath: "_activities/tech-live"
+
+- category:  Life Beyond The Borders
+  side_bar_name: Life Beyond The Borders
+  categoryDesc:
+  sessionFolderPath: "_activities/life-beyond-the-borders"
+
+- category:  Engineering Management
+  side_bar_name: Engineering Management
+  categoryDesc:
+  sessionFolderPath: "_activities/engineering-management"
+
+- category:  Android Workshop
+  side_bar_name: Android Workshop
+  categoryDesc:
+  sessionFolderPath: "_activities/android-workshop" 
