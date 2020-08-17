@@ -1,6 +1,10 @@
 ---
 layout: sessionTemplate
 title: Overview
-desc:
-     This segment is dedicated to encourage and inspire the current and future generation of women those are Engineering and Technology enthusiast. Here we try to incorporate alumni from all major engineering universities of Bangladesh. Find the recorded sessions here in Q/A format.
+desc: >
+ Here goes description + written question ans  lkasjfdlk l asdklfljslkad fklsf jkllasdjfk safjdas fjsklf jkldfjlk
+ klsjfd lajf kldsjflkas jfklasdjflk sdjflk jflksjf skdfjsd lakfjaskl dflksajflkas flkdasjflkdsjflksadjf
+ lkfjaskldfjlksajf lksajfdkl fjaslkfjaklfjlksda flkasjf
+ sdlkfjalksdfj lkasjfdlksdjdflkasjdflkadsjf
+ slakjdflksdjkflkj
 ---
