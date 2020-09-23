@@ -17,7 +17,7 @@ guests  :
       link: https://www.linkedin.com/in/nafisa-anzum/
 hosts:
     - name: Mahmud Mushfique
-      link: "#"
+      link: https://www.linkedin.com/in/khandaker-mushfiqur-rahman-4a0593130/
     - name: Muntaka Ibnath
       link: https://www.linkedin.com/in/muntaka-ibnath-9371a7188/
 writers:

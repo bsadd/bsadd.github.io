@@ -22,7 +22,7 @@ hosts:
   - name: Shashata Sawmya
     link: https://www.linkedin.com/in/shashata-sawmya/
   - name: Mahmud Mushfique
-    link: "#"
+    link: https://www.linkedin.com/in/khandaker-mushfiqur-rahman-4a0593130/
 writers:
   - name: Mahdee Mushfique Kamal
     link: https://www.linkedin.com/in/mmkdhrubo/
