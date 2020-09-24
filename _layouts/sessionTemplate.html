@@ -65,19 +65,19 @@
 
           <div>
             {% if page.guests %}
-            <em><strong>Guest :<br></strong></em>
+            Guest :<br>
             {% for guest in page.guests %}
-              <a href="{{ guest.link }}"><em><strong>&emsp;&emsp;{{ guest.name }}<br></strong></em></a>
-              &emsp;&emsp;&emsp;<em>{{ guest.position }}</em><br><br>
+              <a href="{{ guest.link }}">&emsp;&emsp;{{ guest.name }}<br></a>
+              &emsp;&emsp;&emsp;{{ guest.position }}</em><br>
             {% endfor %}
           {% endif %}
           </div>
     
           <div>
           {% if page.hosts %}
-            <em><strong>Host :<br></strong></em>
+            Host :<br>
             {% for host in page.hosts %}
-              <a href="{{ host.link }}"><em><strong>&emsp;&emsp;{{ host.name }}<br></strong></em></a>
+              <a href="{{ host.link }}">&emsp;&emsp;{{ host.name }}<br></a>
             {% endfor %}
           {% endif %}
           </div>
@@ -85,9 +85,9 @@
           <div>
           {% if page.writers %}
           <br>
-            <em><strong>Writer :<br></strong></em>
+            Writer :<br>
             {% for writer in page.writers %}
-              <a href="{{ writer.link }}"><em><strong>&emsp;&emsp;{{ writer.name }}<br></strong></em></a>
+              <a href="{{ writer.link }}">&emsp;&emsp;{{ writer.name }}<br></a>
             {% endfor %}
           {% endif %}
           </div>
