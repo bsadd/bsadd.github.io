@@ -36,33 +36,35 @@ permalink: /activities/
 
 
             <div class="col-sm-9 panel content-panel">
-
-
                 <p class="alert  text-center h3" style="">Here are some of
                     the sessions conducted by BSADD </p>
 
                 {% for category in site.data.activitiesByCategory %}
 
-                {% for file in site.activities %}
-                {% if file.path contains category.sessionFolderPath  and  file.path contains  'overview' %}
+                    {% for file in site.activities %}
+                        {% if file.path contains category.sessionFolderPath  and  file.path contains  'overview' %}
+                        <div id="{{   category.category  }}">
+                            <a href="{{ site.baseurl }}{{ file.url  }}">
+                                <div class="alert alert-info h3">
+                                    <span style="color: tomato;">{{   category.category  }} </span>
+                                </div>
+                            </a>
 
-                    <div id="{{   category.category  }}">
-                        <a href="{{ site.baseurl }}{{ file.url  }}">
-                            <div class="alert alert-info h3">
-                            <span style="color: tomato;">{{   category.category  }} </span>
+                            <p>{{ file.desc }}</p>
+                            <div class="right">
+                                <a href="{{ site.baseurl }}{{ file.url  }}">sessions with transcriptions</a> |  
+                                <a href="https://www.youtube.com/playlist?list={{category.youtubePlaylist}}">playlist</a>
                             </div>
-                        </a>
-
-                        <p>{{ file.desc }}</p>
-
+                            <br/>
+                            <br/>
+                        </div>
                         {% endif %}
-                        {% endfor %}
-                    </div>
+                    {% endfor %}
                 {% endfor %}
 
 
-                <div id="prev_activities" class="alert alert-info h3"><span style="color: tomato;">Previous
-                        Activities </span>
+                <div id="prev_activities" class="alert alert-info h3">
+                    <span style="color: tomato;">Previous Activities </span>
                 </div>
                 <div style="display: flex; justify-content: center;">
                     <table id="activities-table" class="table table-hover" style="border-style: solid; width: 90%;">
