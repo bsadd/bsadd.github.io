@@ -13,7 +13,7 @@
     <div class="col-xs-12">
       <ul class="nav nav-pills">
         {% for menu in site.data.site_data.navmenu %}
-            <li role="presentation"> <a href="{{ site.baseurl }}{{ menu.path }}">{{ menu.title }} </a> </li>
+            <li role="presentation"> <a href="{{ site.baseurl }}/{{ menu.path }}">{{ menu.title }} </a> </li>
         {% endfor %}
       </ul>
     </div>

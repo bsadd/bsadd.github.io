@@ -12,7 +12,7 @@ navmenu:
     path: "links/"
 
   - title: BSADD Blog
-    path: "postList/"
+    path: "blog/"
 
   - title: BSADD Connect
     path: "connect/"

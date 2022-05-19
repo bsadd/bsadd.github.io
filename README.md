@@ -1,18 +1,16 @@
 # bsadd-home
 A static version with some information about the group and it's activities
 
-The contents are hosted at http://cse.buet.ac.bd/bsadd
-Also a latest blogs can be found on https://medium.com/bsadd
+The contents are hosted at [https://cse.buet.ac.bd/bsadd/](https://cse.buet.ac.bd/bsadd/)
+Also a latest blogs can be found on [https://medium.com/bsadd](https://medium.com/bsadd)
 
-Probable proxy location is http://bsadd.org/
-
-# Requirement
-
-- You need to have  [Jkeyll](https://jekyllrb.com/) installed on your local machine
+Probable proxy location is [https://bsadd.github.io/](https://bsadd.github.io/)
 
 # Setting-up the project
+- You need to have  [Jkeyll](https://jekyllrb.com/) installed on your local machine
 - Clone the repo on your local machine 
--  Run `bundle exec jekyll serve` command and website will be served on localhost
+- Run `bundle install` to install the required modules
+- Run `bundle exec jekyll serve` command and website will be served on localhost
 
 # Updating Site
 ---
