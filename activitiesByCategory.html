@@ -38,26 +38,26 @@ permalink: /activities/
             <div class="col-sm-9 panel content-panel">
 
 
-                <p class="alert  text-center h3" style="background-color: rgb(44, 62, 80) ;color:white">Here are some of
+                <p class="alert  text-center h3" style="">Here are some of
                     the sessions conducted by BSADD </p>
 
                 {% for category in site.data.activitiesByCategory %}
 
                 {% for file in site.activities %}
                 {% if file.path contains category.sessionFolderPath  and  file.path contains  'overview' %}
-                <a href="{{ site.baseurl }}{{ file.url  }}">
-                    <div id="{{   category.category  }}" class="alert alert-info h3"><span
-                            style="color: tomato;">{{   category.category  }} </span> <br>
 
-                        <div
-                            style="border-radius: 10px; border-style: solid; border-color: #000; padding: 20px; margin: 20px; font-size: 16px; color: #000;">
-                            {{ file.desc }}
-                        </div>
+                    <div id="{{   category.category  }}">
+                        <a href="{{ site.baseurl }}{{ file.url  }}">
+                            <div class="alert alert-info h3">
+                            <span style="color: tomato;">{{   category.category  }} </span>
+                            </div>
+                        </a>
+
+                        <p>{{ file.desc }}</p>
 
                         {% endif %}
                         {% endfor %}
                     </div>
-                </a>
                 {% endfor %}
 
 
