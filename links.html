@@ -1,0 +1,75 @@
+---
+permalink: /links/
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul id="nav-items" class="nav nav-stacked">
+                        <li>
+                            <h3 class="highlight"> <a href="">BSADD Links</a> <i
+                                    class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+                        </li>
+
+                        {% for category in site.data.links %}
+                        <li><a href="#{{ category.category }}">{{ category.side_bar_name }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-9 panel content-panel">
+
+                <p class="alert alert-warning text-center h3">Yet another internet page for bunch of links</p>
+
+                {% for category in site.data.links %}
+
+
+                <p id="{{   category.category  }}" class="alert alert-info h3"> {{   category.category  }} </p>
+                <p>{{ category.categoryDesc }} </p> 
+                <table class="table table-hover">
+                    {% for links in category.links %}
+                    <tr>
+                        <td style="width: 25%;">{{ links.title }} </td>
+                        <td style="width: 75%;">
+                            {% if  links.links.size == 1 %}
+                            {% for lnk in links.links %}
+                            <a href="{{ lnk.url }}">{{ lnk.linkName }} </a> {{ lnk.linkDesc }}
+                            {% endfor %}
+                            {% else  %}
+                            <ul>
+                                {% for lnk in links.links %}
+                                <li><a href="{{ lnk.url }}">{{ lnk.linkName }} </a> {{ lnk.linkDesc }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endfor %}
+
+
+            </div>
+
+
+        </div>
+    </div>
+    {% include js_link.html %}
+
+</body>
+<!-- script references -->
+
+</html>

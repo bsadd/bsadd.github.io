@@ -1,0 +1,100 @@
+---
+permalink: /gallery/
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul id="nav-items" class="nav nav-stacked">
+                        <li>
+                            <h3 class="highlight"> <a href="">BSADD Blog</a> <i
+                                    class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+                        </li>
+
+                        {% for session in site.data.gallery %}
+                        {% assign url = session.imgFolder | split: "/" %}
+
+                        {% assign url = url[2] %}
+                        <li><a href="#{{ url }}">{{ session.title }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-9 panel content-panel">
+
+                {% for session in site.data.gallery %}
+
+                {% assign url = session.imgFolder | split: "/" %}
+                {% assign url = url[2] %}
+
+                {% assign thumbFolder = session.imgFolder | append: '/thumb' %}
+
+                <!-- Check for thumbFolder existence -->
+                {% assign found = 0 %}
+                {% for file  in site.static_files %}
+                {% if file.path contains thumbFolder %}
+                {% assign found = 1 %}
+                {% endif %}
+                {% endfor %}
+
+
+                <div id={{url}}>
+                    
+                    <h2>{{ session.title }}</h2>
+                    <hr />
+                    <div id={{url}} class="photo-album">
+                        {% for image in site.static_files %}
+
+                        {% if image.path contains '/thumb' %}
+                        {% continue %}
+                        {% endif %}
+                        {% if image.path contains session.imgFolder %}
+                        {% if image.extname == '.jpg' or image.extname == '.jpeg' or image.extname == '.png' or image.extname == '.JPEG' %}
+
+                        {% for item in session.imgFolder  %}
+                        {% assign picName = image.path | split: "/" | last %}
+
+
+                        <a href="{{site.baseurl}}{{ session.imgFolder }}/{{ picName }}">
+                            {% if found == 1 %}
+                            <img src="{{site.baseurl}}{{ session.imgFolder }}/thumb/{{ picName }}" />
+                            {% else %}
+                            <img src="{{site.baseurl}}{{ session.imgFolder }}/{{ picName }}" style="width: 11vw" />
+                            {% endif %}
+                        </a>
+                        {% endfor %}
+
+                        {% endif %}
+
+
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    {% include js_link.html %}
+
+</body>
+<!-- script references -->
+
+</html>
