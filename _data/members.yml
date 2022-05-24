@@ -1,23 +1,27 @@
 - category:  Faculty Members
   list:
     - name: Dr. Abu Sayed Md. Latiful Hoque, Professor
-      link: http://cse.buet.ac.bd/faculty/facdetail.php?id=asmlatifulhoque
-    - name: Nashid Shahriar, Assistant Professor
+      link: https://cse.buet.ac.bd/faculty/facdetail.php?id=asmlatifulhoque
+    - name: Nashid Shahriar, Former Assistant Professor
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=nshahriar
-    - name: Md. Abu Sayeed Mondol, Assistant Professor
+    - name: Md. Abu Sayeed Mondol, Former Assistant Professor
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=sayeedmondol
-    - name: Hasan Shahid Ferdous, Assistant Professor
+    - name: Hasan Shahid Ferdous, Former Assistant Professor
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=webtonmoy
-    - name: Md. Mustafizur Rahman, Assistant Professor
+    - name: Md. Mustafizur Rahman, Former Assistant Professor
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=mmrahman
-    - name: Mahbubul Hasan, Lecturer
-      link: https://www.linkedin.com/pub/md-mahbubul-hasan
-    - name: Sajjadur Rahman, Lecturer
+    - name: Mahbubul Hasan, Former Lecturer
+      link: https://cse.buet.ac.bd/faculty/facdetail.php?id=mahbubul
+    - name: Sajjadur Rahman, Former Lecturer
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=sunnysajjad
-    - name: Md. Aashikur Rahman Azim, Lecturer
+    - name: Md. Aashikur Rahman Azim, Assistant Professor (On Leave)
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=aashik
-    - name: Abdus Salam Azad, Lecturer
+    - name: Abdus Salam Azad, Assistant Professor (On Leave)
       link: http://cse.buet.ac.bd/faculty/facdetail.php?id=azadsalam
+    - name: Madhusudan Basak, Assistant Professor
+      link: https://cse.buet.ac.bd/faculty/facdetail.php?id=madhusudan
+    - name: Shashata Sawmya, Lecturer
+      link: https://cse.buet.ac.bd/faculty/facdetail.php?id=shashata
 
 - category:  Co-Ordinators from 2007 batch
   list: 
@@ -121,7 +125,7 @@
 
 - category:  Co-Ordinators from 2015 batch
   list: 
-    - name: শাশ্বত সৌম্য
+    - name: Shashata Sawmya
       link: https://www.linkedin.com/mwlite/in/shashata-sawmya
     - name: Tanjim Bin Faruk
       link: https://www.linkedin.com/in/tanjimbinfaruk/
