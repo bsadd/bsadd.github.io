@@ -20,10 +20,9 @@ permalink: /gallery/
                         </li>
 
                         {% for session in site.data.gallery %}
-                        {% assign url = session.imgFolder | split: "/" %}
-
-                        {% assign url = url[2] %}
-                        <li><a href="#{{ url }}">{{ session.title }}</a></li>
+                            {% assign url = session.imgFolder | split: "/" %}
+                            {% assign url = url[2] %}
+                            <li><a href="#{{ url }}">{{ session.title }}</a></li>
                         {% endfor %}
 
                     </ul>
@@ -35,26 +34,23 @@ permalink: /gallery/
             <div class="col-sm-9 panel content-panel">
 
                 {% for session in site.data.gallery %}
-
-                {% assign url = session.imgFolder | split: "/" %}
-                {% assign url = url[2] %}
-
-                {% assign thumbFolder = session.imgFolder | append: '/thumb' %}
-
-                <!-- Check for thumbFolder existence -->
-                {% assign found = 0 %}
-                {% for file  in site.static_files %}
-                {% if file.path contains thumbFolder %}
-                {% assign found = 1 %}
-                {% endif %}
-                {% endfor %}
+                    {% assign url = session.imgFolder | split: "/" %}
+                    {% assign url = url[2] %}
+                    {% assign thumbFolder = session.imgFolder | append: '/thumb' %}
+                    <!-- Check for thumbFolder existence -->
+                    {% assign found = 0 %}
+                    {% for file  in site.static_files %}
+                        {% if file.path contains thumbFolder %}
+                            {% assign found = 1 %}
+                        {% endif %}
+                    {% endfor %}
 
 
                 <div id={{url}}>
                     
                     <h2>{{ session.title }}</h2>
                     <hr />
-                    <div id={{url}} class="photo-album">
+                    <div class="photo-album">
                         {% for image in site.static_files %}
 
                         {% if image.path contains '/thumb' %}
@@ -83,6 +79,19 @@ permalink: /gallery/
                         {% endfor %}
                     </div>
                 </div>
+                {% endfor %}
+
+                {% for category in site.data.activitiesByCategory %}
+                    {% if category.youtubePlaylist %}
+                    <div id="{{ category.category }}">
+
+                        <h2>{{ category.category }}</h2>
+                        <hr />
+                        <div>
+                            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list={{category.youtubePlaylist}}" title="{{category.category}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                    {% endif %}
                 {% endfor %}
 
 
