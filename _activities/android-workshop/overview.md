@@ -2,9 +2,5 @@
 layout: sessionTemplate
 title: Overview 
 desc: >
- Here goes description + written question ans  lkasjfdlk l asdklfljslkad fklsf jkllasdjfk safjdas fjsklf jkldfjlk
- klsjfd lajf kldsjflkas jfklasdjflk sdjflk jflksjf skdfjsd lakfjaskl dflksajflkas flkdasjflkdsjflksadjf
- lkfjaskldfjlksajf lksajfdkl fjaslkfjaklfjlksda flkasjf
- sdlkfjalksdfj lkasjfdlksdjdflkasjdflkadsjf
- slakjdflksdjkflkj
+ For people interested in Android Development, BSADD arranged a lot of sessions on that as a part of this workshop. A youtube playlist of the sessions could be found here.
 ---
