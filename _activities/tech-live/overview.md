@@ -2,9 +2,8 @@
 layout: sessionTemplate
 title: Overview 
 desc: >
- Here goes description + written question ans  lkasjfdlk l asdklfljslkad fklsf jkllasdjfk safjdas fjsklf jkldfjlk
- klsjfd lajf kldsjflkas jfklasdjflk sdjflk jflksjf skdfjsd lakfjaskl dflksajflkas flkdasjflkdsjflksadjf
- lkfjaskldfjlksajf lksajfdkl fjaslkfjaklfjlksda flkasjf
- sdlkfjalksdfj lkasjfdlksdjdflkasjdflkadsjf
- slakjdflksdjkflkj
+ In these sessions, the discussion was mostly based on what is going on with the ever-evolving tech industry
+ at the moment. There were 3 sessions on "Hands on Security" where our guests discussed
+ about the various aspects of system security. A session on "GO" (aka GOLang) also made its way to our TechLives for those
+ who are always on-the-go. Find the recorded sessions here in Q/A format.
 ---
