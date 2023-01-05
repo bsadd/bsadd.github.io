@@ -1,0 +1,22 @@
+navmenu:
+  - title: Home
+    path: ""
+
+  - title: Gallery
+    path: "gallery/"
+
+  - title: Activities
+    path: "activities/"
+
+  - title: B'Links
+    path: "links/"
+
+  - title: BSADD Blog
+    path: "blog/"
+
+  - title: BSADD Connect
+    path: "connect/"
+    
+  - title: About
+    path: "about/"
+  

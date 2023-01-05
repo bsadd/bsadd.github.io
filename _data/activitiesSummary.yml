@@ -1,0 +1,184 @@
+# This file contains data for activity table displayed at homepage. items are displayed in reverse
+# order 
+
+- title: "First Session of BSADD"
+  date: 10th May, 2012
+  sublist: 
+    - Inauguration of BSADD by Department Head
+    - Surprise event - Buggy BUET, An web application to find the bugs and system vulnerabilities
+    - Session on Software Development Best Practices, Conventions and Architectures
+    - Session on User Experience Engineering
+
+    
+
+
+- title: "Html and CSS training session for Beginners"
+  date: 17th May, 2012
+  sublist: 
+  
+    
+
+
+- title: "Practice contest"
+  date: 17th May, 2012
+  sublist: 
+  
+    
+
+
+- title: "Introductory Workshop on Java Frameworks by Sayem Ahmed, Sr. Software Engineer, Impulse BD Ltd."
+  date: 26th May, 2012
+  sublist: 
+  
+    
+
+
+- title: "Database training session"
+  date: 7th June, 2012
+  sublist: 
+  
+    
+
+
+- title: "PHP Frameworks (CodeIgniter) training session"
+  date: 14th June, 2012
+  sublist: 
+  
+    
+
+
+- title: "Working with Database in Java"
+  date: 14th June, 2012
+  sublist: 
+  
+    
+
+
+- title: "HTML/CSS training session and Practice sessions on Java"
+  date: 17th June, 2012
+  sublist: 
+  
+    
+
+
+- title: "1st Intra-Department System Design and Development Contest"
+  date: 28th June, 2012
+  sublist: 
+  
+    
+
+
+- title: "Session on Basic MVC with Java"
+  date: 8th September, 2012
+  sublist: 
+  
+    
+
+
+- title: "Training session Unit Testing in PHP"
+  date: 8th September, 2012
+  sublist: 
+  
+    
+
+
+- title: "Windows 8 and Windows Phone Apps Development session by Microsoft Bangladesh"
+  date: 3rd November, 2012
+  sublist: 
+  
+    
+
+
+- title: "Introducing Open Web Technologies & Firefox OS for smartphone by Mozilla Bangladesh"
+  date: 28th January, 2013
+  sublist: 
+  
+    
+
+
+- title: "Session on Software Architecture & Prototyping with Mock UI"
+  date: 14th January, 2013
+  sublist: 
+  
+    
+
+
+- title: "Inter University System Analysis Design and Development Contest on CSE Festival 2013"
+  date: March, 2013
+  sublist: 
+  
+    
+
+
+- title: "Session on Web Service (REST + SOAP)"
+  date: 5th May 2013
+  sublist: 
+  
+    
+
+
+- title: "Session on Android Database & Webservice"
+  date: 21st January, 2014
+  sublist: 
+  
+    
+
+
+- title: "The Mobile Application Hackathon: Codehub"
+  date: 7th March, 2014
+  sublist: 
+  
+    
+
+
+- title: "Seminar on Python Programming"
+  date: 26 august, 2014
+  sublist: 
+  
+    
+
+
+- title: "Session for Microsoft Imagine Cup 2015 Preparation"
+  date: 2nd September, 2014
+  sublist: 
+  
+    
+
+
+- title: "Kona Software Lab Ltd. Inter University System Design and Development Contest on CSE Festival 2015"
+  date: 8th May, 2015
+  sublist: 
+  
+    
+
+
+- title:  BSADD presents <a href="https://sites.google.com/site/droidworkshop2016/home">Android Workshop 2016</a>. A big applause to Onix Haque for maintaing all the <a href="https://sites.google.com/site/droidworkshop2016/tools">tools</a> and <a href="https://sites.google.com/site/droidworkshop2016/resources">resources</a> so nicely on the website. Within five day schedule following topics are covered - 
+  date: 30th March, 2016
+  sublist: 
+    - Day 1 - <a href="https://sites.google.com/site/droidworkshop2016/design">UI and UX Design</a> by Onix Haque
+    - Day 2 - <a href="https://sites.google.com/site/droidworkshop2016/listview">Android ListView</a> by Onix Haque
+    - Day 3 - <a href="https://sites.google.com/site/droidworkshop2016/sqlite">SQLite Database</a> by E. M. Wasifur Rahman
+    - Day 4 - <a href="https://sites.google.com/site/droidworkshop2016/asynctask">AsyncTask</a> by Shabab Shahriar Khan
+    - Day 5 - <a href="https://sites.google.com/site/droidworkshop2016/volley">Volley Framework</a> by Onix Haque
+
+    
+
+
+- title: <a href="connect/workplacereport">Workplace environment survey, 2016</a> published by <a class="label label-warning" href="connect">BSADD Connect</a>
+  date: 6th February, 2017
+  sublist: 
+  
+    
+
+
+- title: CSE BUET Alumni stepped forward to volunteer on helping common queires regarding universities / companies. <a href="connect">BSADD Connect</a> happily presents you the <a href="connect/alumni">alumni list </a>.
+  date: 13th February, 2017
+  sublist: 
+  
+    
+
+
+- title: BSADD - From Keyboard to Billboard<br/>                                An introductory session on software development and its prospects in Bangladesh ( <a href="https://www.facebook.com/events/454622301535583">event link</a> , <a href="https://www.youtube.com/watch?v=G8YMaqtkt5c">video link</a> ).
+  date: 21st March, 2017
+  sublist: 
+    - IT industry of Bangladesh by Mostafiz Rahman ( <a href="https://goo.gl/480rYV">slide</a> )
