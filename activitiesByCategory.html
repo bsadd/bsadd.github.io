@@ -1,0 +1,102 @@
+---
+permalink: /activities/
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+
+
+    {% capture filtered_titles_array %}{% for item in site.sessions %}{% assign category = item.path | split: "/" %}{% assign cat = category[1] %}{{cat}};{% endfor %}{% endcapture %}
+    {% assign uniqList = filtered_titles_array| split: ';'  %}
+    {% assign uniqList = uniqList | uniq %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="sidebar">
+                    <ul id="nav-items" class="nav nav-stacked">
+                        <li>
+                            <h3 class="highlight"> <a href="">BSADD Sessions</a> <i
+                                    class="glyphicon glyphicon-dashboard pull-right"></i></h3>
+                        </li>
+
+                        {% for category in site.data.activitiesByCategory %}
+                        <li><a href="#{{ category.category }}">{{ category.side_bar_name }}</a></li>
+                        {% endfor %}
+                        <li><a href="#prev_activities">Previous Activities </a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-sm-9 panel content-panel">
+                <p class="alert  text-center h3" style="">Here are some of
+                    the sessions conducted by BSADD </p>
+
+                {% for category in site.data.activitiesByCategory %}
+
+                    {% for file in site.activities %}
+                        {% if file.path contains category.sessionFolderPath  and  file.path contains  'overview' %}
+                        <div id="{{   category.category  }}">
+                            <a href="{{ site.baseurl }}{{ file.url  }}">
+                                <div class="alert alert-info h3">
+                                    <span style="color: tomato;">{{   category.category  }} </span>
+                                </div>
+                            </a>
+
+                            <p>{{ file.desc }}</p>
+                            <div class="right">
+                                <a href="{{ site.baseurl }}{{ file.url  }}">sessions with transcriptions</a> |  
+                                <a href="https://www.youtube.com/playlist?list={{category.youtubePlaylist}}">playlist</a>
+                            </div>
+                            <br/>
+                            <br/>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+
+                <div id="prev_activities" class="alert alert-info h3">
+                    <span style="color: tomato;">Previous Activities </span>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <table id="activities-table" class="table table-hover" style="border-style: solid; width: 90%;">
+                        {% assign reverse_posts = site.data.activitiesSummary | reverse %}
+
+                        {% for activity in reverse_posts %}
+                        <tr>
+                            <td><b>{{ activity.date }}</b></td>
+                            <td>
+                                <b>{{ activity.title }}</b>
+                                <ul>
+                                    {% for item in activity.sublist %}
+                                    <li>{{ item }}</li>
+                                    {% endfor  %}
+                                </ul>
+                            </td>
+                        </tr>
+                        {% endfor %}
+
+
+
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    {% include js_link.html %}
+
+</body>
+<!-- script references -->
+
+</html>
